@@ -234,20 +234,26 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    line-height: 54px; /* 112.5% */
+    line-height: 54px;
 }
 
 
-.about_us_our_agent_cards {
+.about_us_our_agent_cards, .about_us_featured_properties_cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 150px;
 }
 
+.about_us_featured_properties_cards{
+    padding-bottom: 80px;
+}
+
+
+
 .about_us_our_agent_card {
-    width: 230px;
-    height: 300px;
+    width: 310px;
+    height: 360px;
     flex-shrink: 0;
     border: 1px solid black;
     display: block;
@@ -256,11 +262,11 @@
 
 .about_us_our_agent_card img {
     width: 100%;
-    height: 300px;
+    height: 360px;
 }
 
 .about_us_our_agent_person{
-    width: 230px;
+    width: 310px;
     text-align: center;
     padding: 10px 0px;
 }
@@ -284,13 +290,14 @@
 }
 
 .about_us_our_agent_card_icon{
-    width: 230px;
+    width: 310px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .about_us_our_agent_card_icon svg{
@@ -300,4 +307,204 @@
     flex-shrink: 0;
     border-radius: 50%;
 }
+
+.about_us_featured_properties_card{
+    width: 380px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+
+
+}
+
+.about_us_featured_properties_card img{
+    width: 380px;
+    padding: 8px;    
+}
+
+.about_us_featured_properties_card_section{
+    padding: 16px 0px 16px 24px;
+}
+
+.about_us_featured_properties_card_status{
+    border-radius: 2px;
+    background: #F9F2EE;
+    display: inline-flex;
+    padding: 4px 12px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about_us_featured_properties_card_status p{
+    color: var(--Main-Colors-Secondary, #DE8556);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about_us_featured_properties_card_section h3{
+    color: var(--Greyscale-Grey-100, #38343D);
+    font-family: Cardo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.about_us_featured_properties_location{
+    display: flex;
+    padding: 10px 0px;
+}
+
+.about_us_featured_properties_location_icon{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+
+
+.about_us_featured_properties_location_text p{
+    color: var(--Greyscale-Grey-80, #818181);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 7px;
+}
+
+.about_us_featured_properties_card_info{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 21px 0px;
+}
+
+.about_us_featured_properties_card_info div{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us_featured_properties_card_sale{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.about_us_featured_properties_card_price{
+    color: var(--Main-Colors-Secondary, #DE8556);
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about_us_featured_properties_card_price span{
+    color: var(--Greyscale-Grey-80, #818181);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about_us_featured_properties_card_button button{
+    color: var(--Main-Colors-Secondary, #DE8556);
+    border-radius: 2px;
+    border: 1px solid var(--Main-Colors-Secondary, #DE8556);
+    display: inline-flex;
+    padding: 12px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer_present{
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--Main-Colors-Prymary, #123E56);
+    width: 100%;
+    height: 210px;
+    flex-shrink: 0;
+    border: 1px solid black;
+}
+
+.footer_present_img{
+    width: 260px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.footer_present_about{
+    width: 469px;
+}
+
+.footer_present_about svg{
+    stroke-width: 2px;
+    stroke: var(--Main-Colors-Secondary, #DE8556);
+    width: 207px;
+    height: 10px;
+    flex-shrink: 0;
+    margin-left: 200px;
+}
+
+.footer_present_about .look{
+    color: #FFF;
+
+    /* Heading/Heading 38 */
+    font-family: Cardo;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_present_about .home{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer_present_button button{
+    border-radius: 2px;
+    background: var(--Main-Colors-Secondary, #DE8556);
+    display: inline-flex;
+    padding: 16px 40px 16px 39px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer_about{
+    padding: 32px 0px;
+    background:teal;
+    width: 100%;
+    height: 200px;
+}
+
+
+
 
