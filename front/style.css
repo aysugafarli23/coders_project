@@ -65,7 +65,6 @@
 
 .navbar_menu a{
     color: var(--Greyscale-Grey-100, #38343D);
-    /* Body/Body 14 */
     font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-style: normal;
@@ -106,8 +105,7 @@
     display: inline-flex;
     padding: 12px 28px;
     align-items: flex-start;
-    gap: 10px;
-    
+    gap: 10px;    
 }
 
 .about_cover{
@@ -117,13 +115,11 @@
     padding: 30px 120px;
 }
 
-
 .about_us_partners{
     display: flex;
     justify-content: center;
     padding: 50px 0px;
 }
-
 
 .about_us_partners_image img {
     width: 300px;
@@ -194,9 +190,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap:20px
-    
-    
+    gap:20px   
 }
 
 .about_us_our_service_card_image {
@@ -217,7 +211,6 @@
 }
 
 .about_us_our_agent{
-    /* background-color: teal; */
     height: fit-content;
 }
 
@@ -237,7 +230,6 @@
     line-height: 54px;
 }
 
-
 .about_us_our_agent_cards, .about_us_featured_properties_cards{
     display: flex;
     align-items: center;
@@ -248,8 +240,6 @@
 .about_us_featured_properties_cards{
     padding-bottom: 80px;
 }
-
-
 
 .about_us_our_agent_card {
     width: 310px;
@@ -313,8 +303,6 @@
     flex-shrink: 0;
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.11);
-
-
 }
 
 .about_us_featured_properties_card img{
@@ -464,8 +452,6 @@
 
 .footer_present_about .look{
     color: #FFF;
-
-    /* Heading/Heading 38 */
     font-family: Cardo;
     font-size: 38px;
     font-style: normal;
@@ -499,12 +485,141 @@
 }
 
 .footer_about{
-    padding: 32px 0px;
-    background:teal;
+    padding: 64px 0px;
     width: 100%;
-    height: 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.footer_about_home,.footer_about_company,.footer_about_service,.footer_about_newslater{
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+}
 
+.footer_home{
+    color: var(--Greyscale-Grey-100, #38343D);
+    font-family: "Khmer MN";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.footer_about_home span{
+    color: var(--Main-Colors-Secondary, #DE8556);
+    font-family: "Khmer MN";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.footer_text{
+    color: var(--Greyscale-Grey-80, #818181);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 0px 24px;
+}
+
+.footer_about_home_phone,.footer_about_home_email,.footer_about_home_adress {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.footer_about_home_icon,
+.footer_about_home_email_icon,
+.footer_about_home_adress_icon{
+    fill: rgba(0, 0, 0, 0.00);
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.name{
+    color: var(--Greyscale-Grey-100, #38343D);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info{
+    color: var(--Greyscale-Grey-80, #818181);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.footer_about_title{
+    color: var(--Greyscale-Grey-100, #38343D);
+    font-family: "Plus Jakarta Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+.footer_about_company a,.footer_about_service a{
+    display: flex;
+    flex-direction: column;
+    color: var(--Greyscale-Grey-80, #818181);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+form{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+form button{
+    border-radius: 2px;
+    background: var(--Main-Colors-Prymary, #123E56);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+form input{
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.08);width: 256px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+input::placeholder {
+    padding: 10px;
+}
+
+.footer_about_social_icon{
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.footer_about_social_icon svg{
+    background-color: #DE8556;
+    width: 24.621px;
+    height: 24.621px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
