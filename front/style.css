@@ -793,7 +793,8 @@ hr {
 }
 
 .checkout_billing_details,
-#customer_submenu, #coupon_submenu {
+#customer_submenu,
+#coupon_submenu {
   max-width: 776px;
   color: var(--Greyscale-Grey-100, #38343d);
   display: block;
@@ -801,7 +802,8 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.13);
 }
 
-#customer_submenu, #coupon_submenu {
+#customer_submenu,
+#coupon_submenu {
   padding: 20px;
   display: none;
 }
@@ -878,6 +880,15 @@ hr {
   line-height: normal;
 }
 
+.customer_submenu h3 {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Khmer MN";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .custom-checkbox {
   display: flex;
   gap: 5px;
@@ -913,6 +924,41 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.checkout_payment {
+  max-width: 776px;
+  color: var(--Greyscale-Grey-100, #38343d);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.payment_payment_method h2, .payment_card_total h2{
+  color: var(--Greyscale-Grey-100, #38343D);
+  font-family: "Khmer MN";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+
+.payment_method_select{
+  padding: 20px 0px;
+  
+}
+
+.payment_payment_method, .payment_card_total{
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  width: 350px;
+  padding: 20px;
+}
+
+.card_total_info{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Google Map Location */
