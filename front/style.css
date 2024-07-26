@@ -958,6 +958,7 @@ hr {
 
 .card_total_info{
   display: flex;
+  background-color: teal;
   justify-content: space-between;
 }
 
