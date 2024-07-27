@@ -38,11 +38,11 @@
     <main>
         <div class="cover">
             <div class="container">
-               
-                    <h1 class="covers_h1">About Us</h1>
-                    <h4><span class="covers_span">Home/</span>About us</h4>
-                </div>
+
+                <h1 class="covers_h1">About Us</h1>
+                <h4><span class="covers_span">Home/</span>About us</h4>
             </div>
+        </div>
         <div class="checkout_section">
             <div class="checokout_customer">
                 <p>Returning customer? <button onclick="customerShow()">Click here to login</button></p>
@@ -141,27 +141,52 @@
                 <div class="payment_payment_method">
                     <h2>Payment Method</h2>
                     <hr>
-                    <div class="payment_method_select">
-                        <input type="radio" id="checkPayment" name="payment" value="check">
-                        <label for="checkPayment">Check Payment</label>
-                    </div>
-                    <hr>
-                    <div class="payment_method_select">
-                        <input type="radio" id="checkPayment" name="payment" value="check">
-                        <label for="checkPayment">Cash on Delivery</label>
-                    </div>
-                    <hr>
-                    <div class="payment_method_select">
-                        <input type="radio" id="checkPayment" name="payment" value="check">
-                        <label for="checkPayment">Paypal</label>
+                    <div class="payment_checkbox_container">
+                        <label class="payment_checkbox_label">
+                            <input type="checkbox" class="checkbox-input">
+                            <span class="payment_custom-checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle cx="12" cy="12" r="12" fill="#DE8556" />
+                                    <path d="M9 12l2 2l4-4" stroke="white" stroke-width="2" fill="none" />
+                                </svg>
+                            </span>
+                            Check Payment
+                        </label>
+                        <hr>
+
+                        <label class="payment_checkbox_label">
+                            <input type="checkbox" class="checkbox-input">
+                            <span class="payment_custom-checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle cx="12" cy="12" r="12" fill="#DE8556" />
+                                    <path d="M9 12l2 2l4-4" stroke="white" stroke-width="2" fill="none" />
+                                </svg>
+                            </span>
+                            Cash on Delivery
+                        </label>
+                        <hr>
+
+                        <label class="payment_checkbox_label">
+                            <input type="checkbox" class="checkbox-input">
+                            <span class="payment_custom-checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle cx="12" cy="12" r="12" fill="#DE8556" />
+                                    <path d="M9 12l2 2l4-4" stroke="white" stroke-width="2" fill="none" />
+                                </svg>
+                            </span>
+                            Paypal
+                        </label>
                     </div>
                 </div>
                 <div class="payment_card_total">
                     <h2>Card totals</h2>
                     <hr>
                     <div class="card_total_info">
-                        <p>Cart Subtotal</p>
-                        <p>$1296,00</p>
+                        <p class="card_sub">Cart Subtotal</p>
+                        <p class="card_sub">$1296,00</p>
                     </div>
                     <div class="card_total_info">
                         <p>Shipping and Handing</p>
@@ -176,6 +201,10 @@
                         <p>$1300</p>
                     </div>
                 </div>
+            </div>
+            <div class="checkout_payment_footer">
+                <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+                <button>Place Order</button>
             </div>
         </div>
     </main>
