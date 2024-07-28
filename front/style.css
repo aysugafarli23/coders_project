@@ -5,7 +5,6 @@
   text-decoration: none;
   list-style: none;
   font-family: "Plus Jakarta Sans", sans-serif;
-  /* border: 1px solid red; */
 }
 
 @font-face {
@@ -546,7 +545,10 @@
   fill: rgba(0, 0, 0, 0);
   width: 20px;
   height: 20px;
+  color: #123E56;
 }
+
+
 
 .name {
   color: var(--Greyscale-Grey-100, #38343d);
@@ -622,14 +624,18 @@ input::placeholder {
 .footer_about_social_icon {
   display: flex;
   gap: 12px;
+  color: white;
 }
 
-.footer_about_social_icon svg {
+.footer_about_social_icon i {
   background-color: #de8556;
   width: 24.621px;
   height: 24.621px;
-
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
 }
 
 hr {
@@ -829,6 +835,15 @@ hr {
 
 .form-body {
   padding: 20px;
+}
+
+.form-body h3{
+  color: var(--Greyscale-Grey-100, #38343D);
+  font-family: Cardo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .checkout_billing_details h2 {
