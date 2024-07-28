@@ -97,7 +97,7 @@
   box-shadow: -1px 1px 15px 0px rgba(9, 20, 49, 0.11);
   width: 40px;
   height: 40px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,12 +110,13 @@
   padding: 12px 28px;
   align-items: flex-start;
   gap: 10px;
+  border: none;
+  color: white;
 }
 
 .cover {
   background: var(--Greyscale-Grey-10, #f6f6f6);
   padding: 80px 0;
-  
 }
 
 .about_us_partners {
@@ -159,7 +160,7 @@
 
 .about_us_our_service {
   background: var(--Greyscale-Grey-10, #f6f6f6);
-  
+
   padding: 80px 0;
   text-align: center;
   background: var(--Greyscale-Grey-10, #f6f6f6);
@@ -188,7 +189,7 @@
   width: calc((100% - (16px * (3 - 1))) / 3);
 
   /* height: 313px; */
-  
+
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #fff;
@@ -225,6 +226,7 @@
   gap: 24px;
   align-items: center;
   padding: 24px 0px;
+  justify-content: space-between;
 }
 
 .about_us_our_agent_info h2,
@@ -251,8 +253,6 @@
 
 .about_us_our_agent_card {
   width: calc((100% - (24px * (4 - 1))) / 4);
-  
-
   display: block;
 }
 .about_us_featured_properties_card_img img {
@@ -300,13 +300,13 @@
   background-color: #de8556;
   width: 24.621px;
   height: 24.621px;
-  
+
   border-radius: 50%;
 }
 
 .about_us_featured_properties_card {
   width: calc((100% - (10px * (3 - 1))) / 3);
-  
+
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.11);
 }
@@ -356,7 +356,6 @@
 .about_us_featured_properties_location_icon {
   width: 20px;
   height: 20px;
-  
 }
 
 .about_us_featured_properties_location_text p {
@@ -431,14 +430,13 @@
   background: var(--Main-Colors-Prymary, #123e56);
   width: 100%;
   height: 210px;
-  
+
   border: 1px solid black;
 }
 
 .footer_present_img {
   width: 260px;
   height: 100%;
-  
 }
 
 .footer_present_about {
@@ -450,7 +448,7 @@
   stroke: var(--Main-Colors-Secondary, #de8556);
   width: 207px;
   height: 10px;
-  
+
   margin-left: 200px;
 }
 
@@ -548,7 +546,6 @@
   fill: rgba(0, 0, 0, 0);
   width: 20px;
   height: 20px;
-  
 }
 
 .name {
@@ -607,7 +604,6 @@ form button {
   padding: 8px;
   justify-content: center;
   align-items: center;
-  
 }
 
 form input {
@@ -615,7 +611,7 @@ form input {
   border: 1px solid rgba(0, 0, 0, 0.08);
   width: 256px;
   height: 40px;
-  
+
   width: 251px;
 }
 
@@ -626,14 +622,13 @@ input::placeholder {
 .footer_about_social_icon {
   display: flex;
   gap: 12px;
-  
 }
 
 .footer_about_social_icon svg {
   background-color: #de8556;
   width: 24.621px;
   height: 24.621px;
-  
+
   border-radius: 50%;
 }
 
@@ -666,7 +661,6 @@ hr {
 
 .our_portfolio_image img {
   width: 100%;
-  
 }
 
 .our_portfolio_btn {
@@ -719,7 +713,6 @@ hr {
 .portfolio_details_images img {
   width: 245px;
   height: 172px;
-  
 }
 .portfolio_list {
   width: calc(28% - 140px * 0.28);
@@ -745,7 +738,6 @@ hr {
 .portfolio_details_images img {
   width: 273px;
   height: 191px;
-  
 }
 
 .portfolio_list_btn {
@@ -787,7 +779,7 @@ hr {
   max-width: 776px;
   width: 100%;
   height: 60px;
-  
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1062,15 +1054,15 @@ hr {
   line-height: normal;
 }
 
-.checkout_payment_footer{
+.checkout_payment_footer {
   display: grid;
   place-items: center;
   margin-bottom: 80px;
   border: none;
 }
 
-.checkout_payment_footer p{
-  color: var(--Greyscale-Grey-100, #38343D);
+.checkout_payment_footer p {
+  color: var(--Greyscale-Grey-100, #38343d);
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
@@ -1081,15 +1073,15 @@ hr {
   padding-bottom: 32px;
 }
 
-.checkout_payment_footer button{
+.checkout_payment_footer button {
   display: flex;
   width: 282px;
   padding: 16px 0px;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  background: var(--Main-Colors-Prymary, #123E56);
-  color: #FFF;
+  background: var(--Main-Colors-Prymary, #123e56);
+  color: #fff;
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
@@ -1108,4 +1100,74 @@ hr {
 #map iframe {
   width: 100%;
   height: 100%;
+}
+
+/* Shop */
+
+.shop_page {
+  display: flex;
+  padding: 100px 0;
+  gap: 140px;
+}
+
+.shop_products {
+  width: calc(72% - 140px * 0.72);
+}
+
+.shop_products .about_us_featured_properties_cards {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.shop_products
+  .about_us_featured_properties_cards
+  .about_us_featured_properties_card {
+  width: calc((100% - (10px * (2 - 1))) / 2);
+}
+
+.shop_filter {
+  width: calc(28% - 140px * 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.shop_filter .payment_checkbox_label {
+  /* padding: 0px !important; */
+  padding-top: 15px;
+  padding-bottom: 0px !important;
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.shop_filter h2 {
+  padding-bottom: 20px;
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: Cardo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.shop_filter .payment_custom-checkbox {
+  border-radius: 8px;
+}
+
+.shop_filter svg {
+  display: block;
+}
+
+.shop_filter_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop_filter_info p {
+  font-family: "Plus Jakarta Sans";
 }
