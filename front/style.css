@@ -4,11 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Khmer MN", sans-serif;
 }
 
 @font-face {
-  font-family: "Khmer MN";
+  font-family: "Khmer MN, sans-serif";
   src: url("fonts/KhmerMN.ttf") format("truetype");
 }
 
@@ -23,7 +23,6 @@
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: 0;
   padding-bottom: 40px;
@@ -47,18 +46,14 @@
   color: var(--Main-Colors-Secondary, #de8556);
   font-family: Cardo;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .navbar a {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .navbar_menu {
@@ -70,9 +65,7 @@
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .navbar_registration {
@@ -85,9 +78,7 @@
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .navbar_buy_icon {
@@ -143,9 +134,7 @@
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 38px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .about_us_partners_about h5 {
@@ -170,7 +159,6 @@
   text-align: center;
   font-family: Cardo;
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: 54px;
 }
@@ -233,7 +221,6 @@
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: 54px;
 }
@@ -271,18 +258,14 @@
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .about_us_our_agent_person h6 {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .about_us_our_agent_card_icon {
@@ -305,7 +288,6 @@
 
 .about_us_featured_properties_card {
   width: calc((100% - (10px * (3 - 1))) / 3);
-
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.11);
 }
@@ -332,18 +314,14 @@
   color: var(--Main-Colors-Secondary, #de8556);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .about_us_featured_properties_card_section h3 {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-top: 10px;
 }
 
@@ -361,9 +339,7 @@
   color: var(--Greyscale-Grey-80, #818181);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-left: 7px;
 }
 
@@ -392,18 +368,14 @@
   color: var(--Main-Colors-Secondary, #de8556);
   font-family: "Plus Jakarta Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .about_us_featured_properties_card_price span {
   color: var(--Greyscale-Grey-80, #818181);
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .about_us_featured_properties_card_button button {
@@ -416,9 +388,7 @@
   gap: 10px;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .footer_present {
@@ -455,16 +425,13 @@
   color: #fff;
   font-family: Cardo;
   font-size: 38px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .footer_present_about .home {
   color: #fff;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
@@ -480,9 +447,7 @@
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .footer_about {
@@ -503,27 +468,22 @@
 
 .footer_home {
   color: var(--Greyscale-Grey-100, #38343d);
-  font-family: "Khmer MN";
+  font-family: "Khmer MN", sans-serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .footer_about_home span {
   color: var(--Main-Colors-Secondary, #de8556);
-  font-family: "Khmer MN";
+  font-family: "Khmer MN", sans-serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .footer_text {
   color: var(--Greyscale-Grey-80, #818181);
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   padding: 8px 0px 24px;
@@ -545,36 +505,28 @@
   fill: rgba(0, 0, 0, 0);
   width: 20px;
   height: 20px;
-  color: #123E56;
+  color: #123e56;
 }
-
-
 
 .name {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .info {
   color: var(--Greyscale-Grey-80, #818181);
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .footer_about_title {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 17px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   padding-bottom: 15px;
 }
 
@@ -585,9 +537,7 @@
   color: var(--Greyscale-Grey-80, #818181);
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-bottom: 32px;
 }
 
@@ -648,9 +598,7 @@ hr {
   /* Body/Body 12 */
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-align: center;
   padding: 24px 0px 35px;
 }
@@ -683,9 +631,7 @@ hr {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   margin: 20px auto;
   display: block;
   text-align: center;
@@ -736,9 +682,7 @@ hr {
   padding-bottom: 22px;
   font-family: Cardo;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   color: #38343d;
 }
 .portfolio_details_images img {
@@ -756,9 +700,7 @@ hr {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.27);
   display: inline-flex;
@@ -798,9 +740,7 @@ hr {
   text-align: center;
   font-family: Cardo;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .checokout_customer button,
@@ -809,9 +749,7 @@ hr {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-decoration-line: underline;
   border: none;
 }
@@ -837,22 +775,18 @@ hr {
   padding: 20px;
 }
 
-.form-body h3{
-  color: var(--Greyscale-Grey-100, #38343D);
+.form-body h3 {
+  color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .checkout_billing_details h2 {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding: 24px 0px 24px 24px;
 }
 
@@ -860,9 +794,7 @@ hr {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding: 24px 0px 24px 24px;
 }
 
@@ -895,9 +827,7 @@ hr {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .customer_submenu_submit {
@@ -909,18 +839,14 @@ hr {
   color: var(--Main-Colors-Prymary, #123e56);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .customer_submenu h3 {
   color: var(--Greyscale-Grey-100, #38343d);
-  font-family: "Khmer MN";
+  font-family: "Khmer MN", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .custom-checkbox {
@@ -955,7 +881,6 @@ hr {
   color: var(--Greyscale-Grey-80, #818181);
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
@@ -969,13 +894,18 @@ hr {
   padding-bottom: 20px;
 }
 
+.card_total_info:nth-last-of-type(1) p {
+  font-weight: 800;
+}
+
 /* payment checkbox */
 .payment_checkbox_container {
   display: flex;
   flex-direction: column;
 }
 
-.payment_checkbox_label {
+.payment_checkbox_label,
+.amenties_checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -1031,11 +961,9 @@ hr {
 .payment_payment_method h2,
 .payment_card_total h2 {
   color: var(--Greyscale-Grey-100, #38343d);
-  font-family: "Khmer MN";
+  font-family: "Khmer MN", sans-serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-bottom: 20px;
 }
 
@@ -1064,9 +992,7 @@ hr {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
 .checkout_payment_footer {
@@ -1081,7 +1007,6 @@ hr {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   max-width: 50%;
@@ -1100,9 +1025,7 @@ hr {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 /* Google Map Location */
@@ -1154,9 +1077,7 @@ hr {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .shop_filter h2 {
@@ -1164,9 +1085,7 @@ hr {
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .shop_filter .payment_custom-checkbox {
@@ -1185,4 +1104,224 @@ hr {
 
 .shop_filter_info p {
   font-family: "Plus Jakarta Sans";
+}
+
+.shop_filter_info:has(input:checked) svg path {
+  fill: #de8556;
+}
+
+/* Product Details */
+
+.product_detail_img {
+  width: 100%;
+  height: 656px;
+  padding-top: 40px;
+}
+
+.product_detail_img img {
+  width: 100%;
+  height: 90%;
+}
+
+.product_detail_img_status {
+  padding-top: 36px;
+}
+
+.product_detail_img_status p {
+  border-radius: 2px;
+  background: #e7f3e8;
+  display: inline-flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  gap: 10px;
+  color: #19c116;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product_detail_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 56px;
+}
+
+.product_detail_container_about {
+  width: calc(72% - 56px * 0.72);
+}
+
+.product_detail_container_list {
+  width: calc(28% - 140px * 0.28);
+}
+
+/* .product_detail_info {
+  background-color: teal;
+} */
+
+.product_detail_info h2 {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: Cardo;
+  font-size: 38px;
+  font-weight: 400;
+  padding-bottom: 19px;
+}
+
+.product_detail_info_location {
+  display: flex;
+  gap: 10px;
+}
+
+.product_detail_info_location i {
+  color: #123e56;
+}
+
+.product_detail_info_text {
+  padding-top: 51px;
+}
+
+.product_detail_info_text h2 {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Khmer MN";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product_detail_info_text p {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product_container_property_detail {
+  padding: 54px 0px;
+}
+
+.product_container_property_detail h5,
+.property_detail_gallery h5,
+.product_detail_amenties h5,
+.product_detail_location h5,
+.porudct_detail_relate h5 {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Khmer MN";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.property_detail_types {
+  display: flex;
+  gap: 70px;
+  padding-top: 14px;
+}
+
+.property_detail_type h5,
+.property_detail_type p {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+}
+
+.property_detail_type p {
+  font-weight: 600;
+}
+
+.property_detail_gallery {
+  padding-bottom: 54px;
+}
+
+.gallery_image_top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 14px 0px 20px;
+}
+
+.gallery_image_top img {
+  width: 100%;
+}
+
+.gallery_image_bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 24px;
+}
+
+.gallery_image_bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_detail_amenties h5,
+.product_detail_location h5,
+.porudct_detail_relate h5,
+.property_detail_gallery h5 {
+  padding-bottom: 30px;
+}
+
+.amenties_checkbox {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.amenties_checkbox .payment_custom-checkbox {
+  border-radius: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.amenties_checkbox_section {
+  display: flex;
+  gap: 121px;
+}
+
+.amenties_checkbox svg {
+  display: block;
+}
+
+.amenties_checkbox:has(input:checked) svg path {
+  fill: #de8556;
+}
+
+.product_detail_amenties {
+  padding-bottom: 54px;
+}
+
+.porudct_detail_relate .about_us_featured_properties_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.porudct_detail_relate .about_us_featured_properties_card {
+  width: calc((100% - (32px * (2 - 1))) / 2);
+}
+
+.product_detail_filter_type h2 {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: Cardo;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.shop_filter_info label,
+.shop_filter_info p {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product_detail_list .portfolio_list {
+  width: 100%;
+  padding-top: 85px;
 }
