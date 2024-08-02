@@ -608,7 +608,7 @@ hr {
 .our_portfolio_image {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
   padding-top: 64px;
 }
@@ -658,13 +658,13 @@ hr {
 
 .portfolio_details_images {
   display: flex;
-
+  gap: 10px;
   padding: 32px 0px;
 }
 
 .portfolio_details_images img {
-  width: 245px;
-  height: 172px;
+  width: calc(100%-10px (3-1) * 3);
+  object-fit: cover;
 }
 .portfolio_list {
   width: calc(28% - 140px * 0.28);
@@ -1212,6 +1212,7 @@ hr {
 
 .property_detail_types {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
   padding-top: 14px;
 }

@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+  /* Portfolio Details */
+  .portfolio_details_section {
+    display: block;
+    padding: 0px !important;
+    gap: 0px !important;
+  }
+  .portfolio_details_images {
+    display: block;
+  }
+
+  .portfolio_details {
+    width: 100%;
+  }
+
+  .portfolio_details_images img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio_list {
+    width: 100%;
+  }
+
+  /* About Us */
+  .about_us_partners {
+    display: block;
+  }
+
+  .about_us_partners_image {
+    width: 100%;
+  }
+
+  .about_us_partners_about {
+    width: 100%;
+  }
+
+  .about_us_our_service_cards {
+    display: block;
+    padding-bottom: 56px !important;
+  }
+
+  .about_us_our_service_card {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .about_us_our_agent_info a,
+  .about_us_featured_properties_info a {
+    display: none;
+  }
+
+  .about_us_our_agent_cards,
+  .about_us_featured_properties_cards,
+  .about_us_featured_properties_cards {
+    display: block;
+  }
+
+  .about_us_our_agent_card {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  .about_us_featured_properties_card {
+    width: 100%;
+  }
+
+  /* Product Details */
+
+  /* .product_detail_img img {
+    width: 327px;
+    height: 188px;
+  } */
+
+  .product_detail_container {
+    display: block;
+  }
+
+  .property_detail_types {
+    row-gap: 12px;
+  }
+
+  .gallery_image_top,
+  .gallery_image_bottom {
+    display: block;
+  }
+}
