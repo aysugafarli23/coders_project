@@ -1,4 +1,13 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .covers_h1 {
+    font-size: 38px;
+    line-height: normal;
+  }
+
+  .cover {
+    padding: 40px;
+  }
+
   /* Portfolio Details */
   .portfolio_details_section {
     display: block;
@@ -20,6 +29,10 @@
 
   .portfolio_list {
     width: 100%;
+  }
+
+  .portfolio_details img {
+    padding-top: 40px;
   }
 
   /* About Us */
@@ -72,7 +85,9 @@
     width: 327px;
     height: 188px;
   } */
-
+  .product_detail_container_about {
+    width: 100%;
+  }
   .product_detail_container {
     display: block;
   }
@@ -84,5 +99,68 @@
   .gallery_image_top,
   .gallery_image_bottom {
     display: block;
+  }
+
+  .amenties_checkbox_section {
+    display: block;
+  }
+
+  .porudct_detail_relate .about_us_featured_properties_cards {
+    display: block;
+  }
+
+  .porudct_detail_relate .about_us_featured_properties_card {
+    width: 100%;
+  }
+
+  .product_detail_container_list {
+    /* display: none; */
+    width: 100%;
+  }
+
+  /* .gallery_image_top img:nth-last-of-type(0) {
+    padding-bottom: 16px;
+  } */
+
+  /* Shop */
+
+  .shop_page {
+    display: block;
+  }
+
+  .shop_products,
+  .shop_products
+    .about_us_featured_properties_cards
+    .about_us_featured_properties_card,
+  .shop_filter {
+    width: 100%;
+  }
+
+  /* Checkout */
+
+  .checkout_section {
+    padding-top: 38px;
+  }
+  .grid {
+    display: block;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .checkout_payment {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .checkout_section {
+    padding: 38px 24px;
+  }
+
+  .payment_payment_method,
+  .payment_card_total {
+    width: 100%;
+    margin-bottom: 38px;
   }
 }
