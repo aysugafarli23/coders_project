@@ -1,4 +1,66 @@
 @media screen and (max-width: 600px) {
+  /* Footer */
+
+  .footer_present_img {
+    display: none;
+  }
+
+  .footer_present {
+    /* flex-direction: column; */
+    display: block;
+    padding: 35px 29px;
+  }
+
+  .footer_present_about svg {
+    margin: 0;
+  }
+
+  .footer_about {
+    display: block;
+  }
+
+  .footer_about_social_icon {
+    padding-bottom: 32px;
+  }
+
+  .footer_present_about {
+    width: 100%;
+  }
+
+  .footer_present_about p {
+    padding: 20px 0px;
+  }
+
+  .footer_company_service {
+    gap: 64px;
+  }
+
+  /* Navbar */
+  .navbar_menu {
+    display: none;
+  }
+
+  .navbar_registration a:nth-child(3),
+  .navbar_registration a:nth-child(4) {
+    display: none;
+  }
+
+  .navbar_buy_icon:nth-of-type(2) {
+    display: block;
+  }
+
+  .navbar_buy_icon i {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -1px 1px 15px 0px rgba(9, 20, 49, 0.11);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Cover */
   .covers_h1 {
     font-size: 38px;
     line-height: normal;
@@ -31,9 +93,9 @@
     width: 100%;
   }
 
-  .portfolio_details img {
+  /* .portfolio_details img {
     padding-top: 40px;
-  }
+  } */
 
   /* About Us */
   .about_us_partners {

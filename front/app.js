@@ -17,4 +17,19 @@ function customerShow() {
   }
 
 
-  
+document.getElementById('navbar-toggle').addEventListener('click', function(event) {
+    event.preventDefault();
+    const navbarPagesShow = document.getElementById('navbar-pages-show');
+    
+    navbarPagesShow.classList.toggle('show');
+});
+
+document.addEventListener('click', function(event) {
+    const target = event.target;
+    const navbarPagesShow = document.getElementById('navbar-pages-show');
+    const navbarToggle = document.getElementById('navbar-toggle');
+
+    if (!navbarToggle.contains(target) && !navbarPagesShow.contains(target)) {
+        navbarPagesShow.classList.remove('show');
+    }
+}); 
