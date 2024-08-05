@@ -31,6 +31,64 @@
   color: #9a9a9a;
 }
 
+/* navbar res */
+
+.nav-active .navbar_pages_show {
+  transform: translateX(0);
+}
+
+.close .line1 {
+  transform: rotate(-45deg) translate(-5px, 3px);
+  transition: 0.3s ease;
+}
+
+.close .line2 {
+  opacity: 0;
+}
+
+.close .line3 {
+  transform: rotate(45deg) translate(-5px, -3px);
+  transition: 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  /* top: 60px; */
+  left: 250px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a {
+  color: #5f4646;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+#navbar_hamburger_menu {
+  display: none;
+  cursor: pointer;
+}
+
+#navbar_hamburger_menu .line {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #eee;
+  transition: 0.3s ease;
+  margin: 5px 0;
+}
+
+#navbar_hamburger_menu .line2 {
+  opacity: 1;
+}
 /* About us */
 
 .navbar {
@@ -41,8 +99,14 @@
   padding: 25px 0px;
 }
 
-.navbar_menu .navbar_pages {
-  /* position: relative; */
+.navbar_pages {
+  position: relative;
+}
+
+#narrow {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
 }
 
 .navbar span {
@@ -97,7 +161,7 @@
 .navbar_pages_show {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 410px;
   visibility: hidden;
   opacity: 0;
   transform: translateY(10px);
@@ -171,9 +235,9 @@
   font-size: 20px;
 }
 
-.navbar_buy_icon:nth-of-type(2) {
+/* .navbar_buy_icon:nth-of-type(2) {
   display: none;
-} 
+} */
 
 .navbar_registration button {
   border-radius: 2px;
