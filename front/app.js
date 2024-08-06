@@ -34,23 +34,12 @@ document.addEventListener('click', function(event) {
     }
 }); 
 
-// kohne navbar
-// document.addEventListener('click',function(event){
-//   event.preventDefault()
-//   const hamburgerMeny=document.getElementById('navbar_hamburger_menu')
-//   console.log('as');
-  
-// })
-
-// yeni navbar
 
 const navShow = () => {
-  console.log('as');
-  
   const burger = document.querySelector('#navbar_hamburger_menu');
   const nav = document.querySelector('.nav-links');
   const links = document.querySelectorAll('.nav-links li');
-  const menu = document.querySelector('.navbar_menu')
+  const menu = document.querySelector('.navbar_menu');
 
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
@@ -66,7 +55,18 @@ const navShow = () => {
     burger.classList.toggle('close');
     menu.classList.toggle('open');
   });
-}
 
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.navbar_menu') && !event.target.closest('#navbar_hamburger_menu')) {
+      nav.classList.remove('nav-active');
+      burger.classList.remove('close');
+      menu.classList.remove('open');
+
+      links.forEach((link) => {
+        link.style.animation = '';
+      });
+    }
+  });
+}
 
 navShow();

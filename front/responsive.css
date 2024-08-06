@@ -1,91 +1,31 @@
 @media screen and (max-width: 600px) {
-  /* Navbar */
-
-  .navbar {
-    padding: 25px 40px;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  #navbar_hamburger_menu {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 8vh;
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
     right: 0;
-    width: 60%;
-    height: 92vh;
-    display: flex;
-    flex-direction: column;
-    background: #a71930;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: 0.5s ease;
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-
-  /* Footer */
-
-  /* body {
-    overflow: hidden;
-  } */
-
-  .footer_present_img {
-    display: none;
-  }
-
-  .footer_present {
-    /* flex-direction: column; */
-    display: block;
-    padding: 35px 29px;
-  }
-
-  .footer_present_about svg {
-    margin: 0;
-  }
-
-  .footer_about {
-    display: block;
-  }
-
-  .footer_about_social_icon {
-    padding-bottom: 32px;
-  }
-
-  .footer_present_about {
-    width: 100%;
-  }
-
-  .footer_present_about p {
-    padding: 20px 0px;
+    background: #fff;
   }
 
   /* Navbar */
+
+  .navbar_pages {
+    display: block;
+  }
   .navbar_menu {
-    margin-top: 60px;
-    padding-top: 50px;
-    position: absolute;
+    margin-top: 90px;
+    padding: 50px 0px;
+    position: fixed;
     right: 0;
     top: 0;
     transform: translateX(100%);
     transition: 0.3s;
-    background: green;
+    background: white;
     color: white;
     flex-direction: column;
-    width: 300px;
+    width: 50%;
+    height: 100vh;
   }
-  /* #navbar_hamburger_menu {
-    display: block;
-    cursor: pointer;
-  } */
 
   .navbar_menu.open {
     transform: translateX(0);
@@ -110,6 +50,122 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navbar {
+    padding: 25px 40px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #navbar_hamburger_menu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 60%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    background: #a71930;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .navbar_pages_show {
+    position: absolute;
+    top: 100%;
+    left: 410px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    /* border-radius: 8px; */
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    transition: visibility 0s, opacity 0.3s linear, transform 0.3s ease;
+    margin-top: 17px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 0px rgba(7, 6, 34, 0.06);
+  }
+
+  .navbar_pages_show.show {
+    visibility: visible;
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+
+  .close .line1 {
+    transform: rotate(-45deg) translate(-5px, 3px);
+    transition: 0.3s ease;
+    ;
+  }
+
+  .close .line2 {
+    opacity: 0;
+  }
+
+  .close .line3 {
+    transform: rotate(45deg) translate(-5px, -3px);
+    transition: 0.3s ease;
+  }
+
+  @keyframes linksFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* Footer */
+
+  .footer_present_img {
+    display: none;
+  }
+
+  .footer_present {
+    display: block;
+    padding: 35px 29px;
+  }
+
+  .footer_present_about svg {
+    margin: 0;
+  }
+
+  .footer_about {
+    display: block;
+  }
+
+  .footer_about_social_icon {
+    padding-bottom: 32px;
+  }
+
+  .footer_present_about {
+    width: 100%;
+  }
+
+  .footer_present_about p {
+    padding: 20px 0px;
   }
 
   /* Cover */
@@ -148,10 +204,6 @@
   .portfolio_list h2 {
     padding-top: 24px;
   }
-
-  /* .portfolio_details img {
-    padding-top: 40px;
-  } */
 
   /* About Us */
   .about_us_partners {
@@ -199,10 +251,6 @@
 
   /* Product Details */
 
-  /* .product_detail_img img {
-    width: 327px;
-    height: 188px;
-  } */
   .product_detail_container_about {
     width: 100%;
   }
@@ -232,13 +280,8 @@
   }
 
   .product_detail_container_list {
-    /* display: none; */
     width: 100%;
   }
-
-  /* .gallery_image_top img:nth-last-of-type(0) {
-    padding-bottom: 16px;
-  } */
 
   .gallery_image_top img:nth-last-child(2) {
     margin-bottom: 16px;

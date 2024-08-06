@@ -18,8 +18,9 @@
   margin: 0 auto;
 }
 
+/* Cover */
+
 .covers_h1 {
-  /* padding: 30px 0; */
   color: var(--Greyscale-Grey-100, #38343d);
   font-family: Cardo;
   font-size: 48px;
@@ -31,65 +32,12 @@
   color: #9a9a9a;
 }
 
-/* navbar res */
-
-.nav-active .navbar_pages_show {
-  transform: translateX(0);
+.cover {
+  background: var(--Greyscale-Grey-10, #f6f6f6);
+  padding: 57px 0;
 }
 
-.close .line1 {
-  transform: rotate(-45deg) translate(-5px, 3px);
-  transition: 0.3s ease;
-}
-
-.close .line2 {
-  opacity: 0;
-}
-
-.close .line3 {
-  transform: rotate(45deg) translate(-5px, -3px);
-  transition: 0.3s ease;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  position: absolute;
-  /* top: 60px; */
-  left: 250px;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.nav-links a {
-  color: #5f4646;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  padding: 10px 0;
-}
-
-#navbar_hamburger_menu {
-  display: none;
-  cursor: pointer;
-}
-
-#navbar_hamburger_menu .line {
-  display: block;
-  width: 24px;
-  height: 3px;
-  background-color: #eee;
-  transition: 0.3s ease;
-  margin: 5px 0;
-}
-
-#navbar_hamburger_menu .line2 {
-  opacity: 1;
-}
-/* About us */
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -165,7 +113,6 @@
   visibility: hidden;
   opacity: 0;
   transform: translateY(10px);
-  /* border-radius: 8px; */
   width: 250px;
   background-color: white;
   border: 1px solid #ccc;
@@ -189,12 +136,6 @@
   border-radius: 2px;
 }
 
-/* .navbar_pages_show ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-} */
-
 .navbar_pages_show li {
   text-align: left;
   padding: 15px;
@@ -204,8 +145,6 @@
   text-decoration: none;
   color: #333;
 }
-
-/* aaa */
 
 .navbar_registration {
   display: flex;
@@ -235,10 +174,6 @@
   font-size: 20px;
 }
 
-/* .navbar_buy_icon:nth-of-type(2) {
-  display: none;
-} */
-
 .navbar_registration button {
   border-radius: 2px;
   background: var(--Main-Colors-Secondary, #de8556);
@@ -250,10 +185,262 @@
   color: white;
 }
 
-.cover {
-  background: var(--Greyscale-Grey-10, #f6f6f6);
-  padding: 57px 0;
+.nav-active .navbar_pages_show {
+  transform: translateX(0);
 }
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 250px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a {
+  color: #5f4646;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+#navbar_hamburger_menu {
+  display: none;
+  cursor: pointer;
+}
+
+#navbar_hamburger_menu .line {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #eee;
+  transition: 0.3s ease;
+  margin: 5px 0;
+}
+
+#navbar_hamburger_menu .line1,
+#navbar_hamburger_menu .line2,
+#navbar_hamburger_menu .line3 {
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease;
+}
+#navbar_hamburger_menu .line2 {
+  margin: 3px 0px;
+}
+
+/* Footer */
+
+.footer_present {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--Main-Colors-Prymary, #123e56);
+
+  border: 1px solid black;
+}
+
+.footer_present_img {
+  width: 260px;
+}
+
+.footer_present_about {
+  width: 469px;
+}
+
+.footer_present_about svg {
+  stroke-width: 2px;
+  stroke: var(--Main-Colors-Secondary, #de8556);
+  width: 207px;
+  height: 10px;
+
+  margin-left: 200px;
+}
+
+.footer_present_about .look {
+  color: #fff;
+  font-family: Cardo;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.footer_present_about .home {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.footer_present_button button {
+  border-radius: 2px;
+  background: var(--Main-Colors-Secondary, #de8556);
+  display: inline-flex;
+  padding: 16px 40px 16px 39px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer_about {
+  padding: 64px 0px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_home {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Khmer MN", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer_about_home span {
+  color: var(--Main-Colors-Secondary, #de8556);
+  font-family: "Khmer MN", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer_text {
+  color: var(--Greyscale-Grey-80, #818181);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 0px 24px;
+  width: 230px;
+}
+
+.footer_company_service {
+  display: flex;
+  gap: 159px;
+}
+
+.footer_about_home_phone,
+.footer_about_home_email,
+.footer_about_home_adress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.footer_about_home_icon,
+.footer_about_home_email_icon,
+.footer_about_home_adress_icon {
+  fill: rgba(0, 0, 0, 0);
+  width: 20px;
+  height: 20px;
+  color: #123e56;
+}
+
+.name {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info {
+  color: var(--Greyscale-Grey-80, #818181);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer_about_title {
+  color: var(--Greyscale-Grey-100, #38343d);
+  font-family: "Plus Jakarta Sans";
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.footer_about_company a,
+.footer_about_service a {
+  display: flex;
+  flex-direction: column;
+  color: var(--Greyscale-Grey-80, #818181);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+
+.form_footer {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 20px;
+}
+
+form button {
+  border-radius: 2px;
+  background: var(--Main-Colors-Prymary, #123e56);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 256px;
+  height: 40px;
+
+  width: 251px;
+}
+
+input::placeholder {
+  padding: 10px;
+}
+
+.footer_about_social_icon {
+  display: flex;
+  gap: 12px;
+  color: white;
+}
+
+.footer_about_social_icon i {
+  background-color: #de8556;
+  width: 24.621px;
+  height: 24.621px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+hr {
+  border: solid 1px rgba(0, 0, 0, 0.06);
+}
+
+.footer_reserved_company {
+  color: var(--Greyscale-Grey-80, #818181);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  padding: 24px 0px 35px;
+}
+
+/* About us */
 
 .about_us_partners {
   display: flex;
@@ -319,9 +506,6 @@
 
 .about_us_our_service_card {
   width: calc((100% - (16px * (3 - 1))) / 3);
-
-  /* height: 313px; */
-
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #fff;
@@ -389,8 +573,28 @@
 .about_us_featured_properties_card_img img {
   width: 100% !important;
 }
+
 .about_us_our_agent_card img {
   width: 100%;
+}
+
+.about_us_featured_properties_card {
+  position: relative;
+}
+
+.card_heart {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  z-index: 1000;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.74);
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_us_our_agent_person {
@@ -535,220 +739,6 @@
   font-weight: 600;
 }
 
-.footer_present {
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: var(--Main-Colors-Prymary, #123e56);
-
-  border: 1px solid black;
-}
-
-.footer_present_img {
-  width: 260px;
-}
-
-.footer_present_about {
-  width: 469px;
-}
-
-.footer_present_about svg {
-  stroke-width: 2px;
-  stroke: var(--Main-Colors-Secondary, #de8556);
-  width: 207px;
-  height: 10px;
-
-  margin-left: 200px;
-}
-
-.footer_present_about .look {
-  color: #fff;
-  font-family: Cardo;
-  font-size: 38px;
-  font-weight: 400;
-}
-
-.footer_present_about .home {
-  color: #fff;
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-}
-
-.footer_present_button button {
-  border-radius: 2px;
-  background: var(--Main-Colors-Secondary, #de8556);
-  display: inline-flex;
-  padding: 16px 40px 16px 39px;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.footer_about {
-  padding: 64px 0px 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* .footer_about_home,
-.footer_about_company,
-.footer_about_service,
-.footer_about_newslater {
-  width: 300px;
-  height: fit-content;
-  background-color: white;
-} */
-
-.footer_home {
-  color: var(--Greyscale-Grey-100, #38343d);
-  font-family: "Khmer MN", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.footer_about_home span {
-  color: var(--Main-Colors-Secondary, #de8556);
-  font-family: "Khmer MN", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.footer_text {
-  color: var(--Greyscale-Grey-80, #818181);
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  padding: 8px 0px 24px;
-  width: 230px;
-}
-
-.footer_company_service {
-  display: flex;
-  gap: 159px;
-}
-
-.footer_about_home_phone,
-.footer_about_home_email,
-.footer_about_home_adress {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 20px;
-}
-
-.footer_about_home_icon,
-.footer_about_home_email_icon,
-.footer_about_home_adress_icon {
-  fill: rgba(0, 0, 0, 0);
-  width: 20px;
-  height: 20px;
-  color: #123e56;
-}
-
-.name {
-  color: var(--Greyscale-Grey-100, #38343d);
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.info {
-  color: var(--Greyscale-Grey-80, #818181);
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.footer_about_title {
-  color: var(--Greyscale-Grey-100, #38343d);
-  font-family: "Plus Jakarta Sans";
-  font-size: 17px;
-  font-weight: 600;
-  padding-bottom: 15px;
-}
-
-.footer_about_company a,
-.footer_about_service a {
-  display: flex;
-  flex-direction: column;
-  color: var(--Greyscale-Grey-80, #818181);
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-weight: 400;
-  padding-bottom: 32px;
-}
-
-.form_footer {
-  display: flex;
-  gap: 8px;
-  padding-bottom: 20px;
-}
-
-form button {
-  border-radius: 2px;
-  background: var(--Main-Colors-Prymary, #123e56);
-  display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
-}
-
-form input {
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  width: 256px;
-  height: 40px;
-
-  width: 251px;
-}
-
-input::placeholder {
-  padding: 10px;
-}
-
-.footer_about_social_icon {
-  display: flex;
-  gap: 12px;
-  color: white;
-}
-
-.footer_about_social_icon i {
-  background-color: #de8556;
-  width: 24.621px;
-  height: 24.621px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: small;
-}
-
-hr {
-  border: solid 1px rgba(0, 0, 0, 0.06);
-}
-
-.footer_reserved_company {
-  color: var(--Greyscale-Grey-80, #818181);
-
-  /* Body/Body 12 */
-  font-family: "Plus Jakarta Sans";
-  font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  padding: 24px 0px 35px;
-}
-
 /* Our Portfolio */
 
 .our_portfolio_image {
@@ -816,14 +806,6 @@ hr {
   width: calc(28% - 140px * 0.28);
 }
 
-/* p {
-  color: #38343d;
-
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-} */
 .portfolio_list h2 {
   padding-bottom: 22px;
   font-family: Cardo;
@@ -831,11 +813,6 @@ hr {
   font-weight: 400;
   color: #38343d;
 }
-
-/* .portfolio_details_images img {
-  width: 273px;
-  height: 191px;
-} */
 
 .portfolio_list_btn {
   display: flex;
@@ -1261,7 +1238,6 @@ hr {
 
 .product_detail_img {
   width: 100%;
-  /* height: 656px; */
   padding-top: 40px;
 }
 
@@ -1300,10 +1276,6 @@ hr {
 .product_detail_container_list {
   width: calc(28% - 140px * 0.28);
 }
-
-/* .product_detail_info {
-  background-color: teal;
-} */
 
 .product_detail_info h2 {
   color: var(--Greyscale-Grey-100, #38343d);
