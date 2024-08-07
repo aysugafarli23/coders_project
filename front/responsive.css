@@ -23,8 +23,9 @@
     background: white;
     color: white;
     flex-direction: column;
-    width: 50%;
+    width: 240px;
     height: 100vh;
+    gap: 20px;
   }
 
   .navbar_menu.open {
@@ -56,9 +57,9 @@
     padding: 25px 40px;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 
   #navbar_hamburger_menu {
     display: block;
@@ -69,17 +70,10 @@
   }
 
   .nav-links {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 60%;
-    height: 92vh;
     display: flex;
     flex-direction: column;
-    background: #a71930;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100%);
     transition: 0.5s ease;
   }
 
@@ -89,13 +83,11 @@
 
   .navbar_pages_show {
     position: absolute;
-    top: 100%;
-    left: 410px;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(10px);
-    /* border-radius: 8px; */
+    top: 208px;
+    left: -2px;
     width: 250px;
+    height: 100%;
+    overflow: auto;
     background-color: white;
     border: 1px solid #ccc;
     z-index: 1000;
@@ -111,10 +103,29 @@
     /* transform: translateY(0); */
   }
 
+  #navbar-toggle {
+    position: relative;
+  }
+
+  #narrow {
+    position: absolute;
+    left: 138px;
+    top: 203px;
+    width: 30px;
+    height: 33px;
+    color: black;
+  }
+
+  /* #narrow {
+    position: absolute;
+    left: 125px;
+    top: 379px;
+    color: black;
+  } */
+
   .close .line1 {
     transform: rotate(-45deg) translate(-5px, 3px);
     transition: 0.3s ease;
-    ;
   }
 
   .close .line2 {
