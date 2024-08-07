@@ -21,19 +21,19 @@
                 <div class="home"><a href="">Home<span>Q</span></a></div>
                 <div class="navbar_menu">
                     <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Shop</a>
+                    <a href="{% url 'about'%}">About</a>
+                    <a href="{% url 'shop'%}">Shop</a>
                     <a href="">News</a>
                     <a href="" class="navbar_pages" id="navbar-toggle">Pages</a>
                     <i class="fa-solid fa-chevron-down" id="narrow"></i>
                     <div class="navbar_pages_show" id="navbar-pages-show">
                         <hr>
                         <ul class="nav-links">
-                            <li><a href="">Portfolio</a></li>
+                            <li><a href="{% url 'our_portfolio' %}">Portfolio</a></li>
                             <li><a href="">Our Agent</a></li>
                             <li><a href="">Our Service</a></li>
                             <li><a href="">Wishlist</a></li>
-                            <li><a href="">Location</a></li>
+                            <li><a href="{% url 'google_map' %}">Location</a></li>
                             <li><a href="">FAQ</a></li>
                         </ul>
                     </div>
@@ -111,16 +111,16 @@
                     <div class="footer_about_company">
                         <p class="footer_about_title">Company</p>
                         <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Shop</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'shop' %}">Shop</a>
                         <a href="">Wishlist</a>
-                        <a href="">Portfolio</a>
+                        <a href="{% url 'our_portfolio' %}">Portfolio</a>
                     </div>
                     <div class="footer_about_service">
                         <p class="footer_about_title">Service</p>
                         <a href="">Login</a>
                         <a href="">Register</a>
-                        <a href="">Location</a>
+                        <a href="{% url 'google_map' %}">Location</a>
                         <a href="">FAQ</a>
                         <a href="">News</a>
                     </div>
