@@ -13,45 +13,45 @@
     </div>
     <div class="container">
         <div class="product_detail_img">
-            <img src="{{ products.product_image.url }}" alt="">
+            <img src="{{ product.product_image.url }}" alt="">
             <div class="product_detail_img_status">
-                <p>{{products.product_status}}</p>
+                <p>{{product.product_status}}</p>
             </div>
         </div>
         <div class="product_detail_container">
             <div class="product_detail_container_about">
                 <div class="product_detail_info">
-                    <h2>{{products.product_name}}</h2>
+                    <h2>{{product.product_name}}</h2>
                     <div class="product_detail_info_location">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>{{products.product_location}}</p>
+                        <p>{{product.product_location}}</p>
                     </div>
                     <div class="product_detail_info_text">
                         <h2>Descriptions</h2>
-                        <p>{{products.product_about}}</p>
+                        <p>{{product.product_about}}</p>
                     </div>
                     <div class="product_container_property_detail">
                         <h5>Property Detail</h5>
                         <div class="property_detail_types">
                             <div class="property_detail_type">
                                 <h5>Property ID</h5>
-                                <p>{{products.id}}</p>
+                                <p>{{product.id}}</p>
                             </div>
                             <div class="property_detail_type">
                                 <h5>Home Area</h5>
-                                <p>{{products.product_ft}} sqft</p>
+                                <p>{{product.product_ft}} sqft</p>
                             </div>
                             <div class="property_detail_type">
                                 <h5>Rooms</h5>
-                                <p>{{products.product_bed_count}}</p>
+                                <p>{{product.product_bed_count}}</p>
                             </div>
                             <div class="property_detail_type">
                                 <h5>Baths</h5>
-                                <p>{{products.product_bath_count}}</p>
+                                <p>{{product.product_bath_count}}</p>
                             </div>
                             <div class="property_detail_type">
                                 <h5>Year Build</h5>
-                                <p>{{products.product_build_year}}</p>
+                                <p>{{product.product_build_year}}</p>
                             </div>
                         </div>
                     </div>
@@ -62,9 +62,9 @@
                             <img src="./assets/g2.png" alt="">
                         </div>
                         <div class="gallery_image_bottom">
-                            <img src="./assets/g3.png" alt="">
-                            <img src="./assets/g4.png" alt="">
-                            <img src="./assets/g5.png" alt="">
+                            {% for image in product.images.all %}
+                                <img src="{{ image.image.url }}" alt="Product Image" />
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="product_detail_amenties">
@@ -289,7 +289,7 @@
                                     <div class="about_us_featured_properties_card_status">
                                         <p>{{product.product_status}}</p>
                                     </div>
-                                    <h3>{{product.prduct_name}}</h3>
+                                    <h3>{{product.product_name}}</h3>
                                     <div class="about_us_featured_properties_location">
                                         <div class="about_us_featured_properties_location_icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"

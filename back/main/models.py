@@ -17,20 +17,27 @@ class Portfolio(models.Model):
     
     
 class Product(models.Model):
-    product_image=models.FileField(upload_to="product_image",blank=True,null=True,verbose_name="Product Image")    
-    product_status=models.TextField(blank=True,null=True)
-    product_name=models.TextField(blank=True,null=True)
-    product_location=models.TextField(blank=True,null=True)
-    product_about=models.TextField(blank=True,null=True)
-    product_type=models.TextField(blank=True,null=True)
+    product_image = models.ImageField(upload_to="product_images/", blank=True, null=True, verbose_name="Product Image")
+    product_name = models.TextField(blank=True, null=True)
+    product_status=models.CharField(max_length=20,blank=True,null=True)
+    product_location = models.TextField(blank=True, null=True)
+    product_about = models.TextField(blank=True, null=True)
+    product_type = models.CharField(max_length=10)
     product_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     product_bath_count = models.IntegerField(default=0)
-    product_bed_count=models.IntegerField(default=0)
-    product_ft=models.IntegerField(default=0)
-    product_build_year=models.IntegerField(default=0)
+    product_bed_count = models.IntegerField(default=0)
+    product_ft = models.IntegerField(default=0)
+    product_build_year = models.IntegerField(default=0)
+
     def __str__(self):
         return self.product_name
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, related_name='images', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='product_images/', blank=True, null=True)
     
+    class Meta:
+        ordering = ['id']
    
 class Agent(models.Model):
     agent_image=models.FileField(upload_to="product_image",blank=True,null=True,verbose_name="Product Image")   

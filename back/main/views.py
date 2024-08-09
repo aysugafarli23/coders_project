@@ -34,15 +34,15 @@ def our_portfolio(request):
 def portfolio_details(requset):
     return render(requset,"portfolio_details.html")
 
-def product_details(request,id):
-    promo_product=Product.objects.order_by('?')[:2]
-    products=get_object_or_404(Product,id=id)
+def product_details(request, id):
+    promo_product = Product.objects.order_by('?')[:2]
+    product = get_object_or_404(Product, id=id)  # 'product' olarak adlandırdık
     
-    context={
-        "products":products,
-        "promo_product":promo_product
+    context = {
+        "product": product,  # 'product' değişkenini geçiyoruz
+        "promo_product": promo_product
     }
-    return render(request,"product_details.html",context)
+    return render(request, "product_details.html", context)
 
 def shop(request):
     # products=Product.objects.all()
