@@ -27,7 +27,7 @@ class Product(models.Model):
     product_bath_count = models.IntegerField(default=0)
     product_bed_count=models.IntegerField(default=0)
     product_ft=models.IntegerField(default=0)
-    
+    product_build_year=models.IntegerField(default=0)
     def __str__(self):
         return self.product_name
     

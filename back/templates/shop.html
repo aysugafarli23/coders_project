@@ -104,7 +104,10 @@
                                     <p>{{product.product_price}}<span>/ {{product.product_type}}</span></p>
                                 </div>
                                 <div class="about_us_featured_properties_card_button">
-                                    <button>See Detail</button>
+                                    <a href="{% url 'product_details' id=product.id %}">
+                                        <button>See Detail</button>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>

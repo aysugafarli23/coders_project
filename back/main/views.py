@@ -1,5 +1,5 @@
 from django.core.paginator import Paginator
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from .models import Portfolio,Product,Agent,Service
 
 # Create your views here.
@@ -34,11 +34,19 @@ def our_portfolio(request):
 def portfolio_details(requset):
     return render(requset,"portfolio_details.html")
 
-def product_details(request):
-    return render(request,"product_details.html")
+def product_details(request,id):
+    promo_product=Product.objects.order_by('?')[:2]
+    products=get_object_or_404(Product,id=id)
+    
+    context={
+        "products":products,
+        "promo_product":promo_product
+    }
+    return render(request,"product_details.html",context)
 
 def shop(request):
-    products=Product.objects.all()
+    # products=Product.objects.all()
+    products=Product.objects.all().order_by('id')
     paginator=Paginator(products,8)
     page_number=request.GET.get('page')
     page_obj=paginator.get_page(page_number)

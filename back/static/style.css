@@ -642,6 +642,12 @@ hr {
 
 .about_us_featured_properties_card img {
   width: 380px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about_us_featured_properties_card_img {
   padding: 8px;
 }
 
@@ -1243,6 +1249,7 @@ hr {
 
 .product_detail_img img {
   width: 100%;
+  max-height: 626px;
 }
 
 .product_detail_img_status {
