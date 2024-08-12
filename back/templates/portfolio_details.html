@@ -13,7 +13,7 @@
   <div class="container">
     <div class="portfolio_details_section">
       <div class="portfolio_details">
-        <img src="./assets/portdet.png" alt="" />
+        <img src="{{ portfolio_details.portfolio_image.url }}" alt="">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id a enim,
           consectetur cursus. At mattis nulla in pretium. Condimentum sagittis
@@ -39,9 +39,12 @@
         </p>
 
         <div class="portfolio_details_images">
-          <img src="./assets/portdetimg1.png" alt="" />
-          <img src="./assets/portdetimg2.png" alt="" />
-          <img src="./assets/portdetimg3.png" alt="" />
+          {% for image in portfolio_details.images.all %}
+            <img src="{{ image.image.url }}" alt="Portfolio Image" />
+          {% endfor %}
+
+          {% comment %} <img src="{% static './assets/portdetimg2.png' %}" alt="" />
+          <img src="{% static './assets/portdetimg3.png' %}" alt="" /> {% endcomment %}
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id a enim,
@@ -67,12 +70,11 @@
       <div class="portfolio_list">
         <h2>Protfolio List</h2>
         <div class="portfolio_list_images">
-          <img src="./assets/portlist1.png" alt="" />
-          <img src="./assets/portlist2.png" alt="" />
-          <img src="./assets/portlist3.png" alt="" />
-        </div>
+          {% for portfolio in portfolios  %}
+          <a href="{% url 'portfolio_details' id=portfolio.id %}"><img src="{{ portfolio.portfolio_image.url }}" alt=""></a>
+          {% endfor %}
         <div class="portfolio_list_btn">
-          <button>See All</button>
+          <a href="{% url 'our_portfolio' %}"><button>See All</button></a>
         </div>
       </div>
     </div>

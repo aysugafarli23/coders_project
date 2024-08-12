@@ -404,12 +404,12 @@
                     <div class="portfolio_list">
                         <h2>Protfolio List</h2>
                         <div class="portfolio_list_images">
-                            <img src="./assets/portlist1.png" alt="">
-                            <img src="./assets/portlist2.png" alt="">
-                            <img src="./assets/portlist3.png" alt="">
+                            {% for portfolio in portfolios %}
+                                <a href="{% url 'portfolio_details' id=portfolio.id %}"><img src="{{ portfolio.portfolio_image.url }}" alt="Portfolio Image"></a>
+                            {% endfor %}
                         </div>
                         <div class="portfolio_list_btn">
-                            <button>See All</button>
+                            <a href="{% url 'our_portfolio' %}"><button>See All</button></a>
                         </div>
                     </div>
                 </div>

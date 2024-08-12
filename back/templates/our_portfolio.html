@@ -14,7 +14,7 @@
     <div class="our_portfolio_image">
       {% for portfolio in page_obj %}
     <div class="portfolio-item">
-        <img src="{{ portfolio.portfolio_image.url }}" alt="">
+        <a href="{% url 'portfolio_details' id=portfolio.id %}" type="button"><img src="{{ portfolio.portfolio_image.url }}" alt=""></a>
     </div>
       {% endfor %}
     </div>

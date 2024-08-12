@@ -26,9 +26,11 @@ urlpatterns = [
     path('checkout/', checkout, name='checkout'),
     path('google_map/', google_map, name='google_map'),
     path('our_portfolio/', our_portfolio, name='our_portfolio'),
-    path('portfolio_details/', portfolio_details, name='portfolio_details'),
+    path('portfolio_details/<int:id>/', portfolio_details, name='portfolio_details'),
     path('product_details/<int:id>/', product_details, name='product_details'),
     path('shop/', shop, name='shop'),
+    
+    
     
 ]
 

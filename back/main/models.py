@@ -3,18 +3,23 @@ from django.db import models
 # Create your models here.
 
 class Portfolio(models.Model):
-    author=models.ForeignKey("auth.User", on_delete=models.CASCADE)
-    portfolio_image=models.FileField(upload_to="portfolio_image",blank=True,null=True,verbose_name="Portfolio Image")
-    cretae_date=models.DateTimeField(auto_now_add=True)
-    portfolio_name=models.CharField(max_length=30,blank=True,null=True)
-    portfolio_image_detail=models.TextField()
-    portfolio_detail=models.TextField()
-    portfolio_about=models.TextField()
+    author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    portfolio_image = models.ImageField(upload_to="portfolio_images/", blank=True, null=True, verbose_name="Portfolio Image")
+    created_date = models.DateTimeField(auto_now_add=True)
+    portfolio_name = models.CharField(max_length=30, blank=True, null=True)
+    portfolio_image_detail = models.TextField(blank=True,null=True)
+    portfolio_detail = models.TextField(blank=True,null=True)
+    portfolio_about = models.TextField(blank=True,null=True)
     
     def __str__(self):
         return self.portfolio_name
     
+class PortfolioImage(models.Model):
+    portfolio = models.ForeignKey(Portfolio, related_name='images', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='portfolio_images/', blank=True, null=True)
     
+    class Meta:
+        ordering = ['id']
     
 class Product(models.Model):
     product_image = models.ImageField(upload_to="product_images/", blank=True, null=True, verbose_name="Product Image")
@@ -28,6 +33,7 @@ class Product(models.Model):
     product_bed_count = models.IntegerField(default=0)
     product_ft = models.IntegerField(default=0)
     product_build_year = models.IntegerField(default=0)
+    
 
     def __str__(self):
         return self.product_name
@@ -55,6 +61,7 @@ class Agent(models.Model):
 class Service(models.Model):
     service_name=models.CharField(max_length=30,blank=True,null=True)
     service_about=models.TextField(blank=True,null=True)
+    svg_code = models.TextField(blank=True, null=True)
     
     def __str__(self):
         return self.service_name

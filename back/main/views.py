@@ -31,16 +31,26 @@ def our_portfolio(request):
     }
     return render(request, "our_portfolio.html", context)
 
-def portfolio_details(requset):
-    return render(requset,"portfolio_details.html")
+def portfolio_details(request, id):
+    portfolio_details = get_object_or_404(Portfolio, id=id)
+    portfolios = Portfolio.objects.order_by('?')[:3]
+
+    context = {
+        "portfolio_details": portfolio_details,
+        "portfolios": portfolios
+    }
+
+    return render(request, "portfolio_details.html", context)
 
 def product_details(request, id):
     promo_product = Product.objects.order_by('?')[:2]
     product = get_object_or_404(Product, id=id)
+    portfolios=Portfolio.objects.order_by('?')[:3]
     
     context = {
         "product": product,
-        "promo_product": promo_product
+        "promo_product": promo_product,
+        'portfolios':portfolios
     }
     return render(request, "product_details.html", context)
 
