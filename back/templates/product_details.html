@@ -57,10 +57,6 @@
                     </div>
                     <div class="property_detail_gallery">
                         <h5>Gallery</h5>
-                        <div class="gallery_image_top">
-                            <img src="./assets/g1.png" alt="">
-                            <img src="./assets/g2.png" alt="">
-                        </div>
                         <div class="gallery_image_bottom">
                             {% for image in product.images.all %}
                                 <img src="{{ image.image.url }}" alt="Product Image" />
