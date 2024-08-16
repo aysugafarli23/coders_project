@@ -2,6 +2,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render,get_object_or_404
 from .models import Portfolio,Product,Agent,Service
 
+
 # Create your views here.
 def about(request):
     agents=Agent.objects.all()
@@ -55,13 +56,20 @@ def product_details(request, id):
     return render(request, "product_details.html", context)
 
 def shop(request):
-    products=Product.objects.all().order_by('id')
-    paginator=Paginator(products,8)
-    page_number=request.GET.get('page')
-    page_obj=paginator.get_page(page_number)
-    
-    context={
-        "page_obj":page_obj
+    keyword = request.GET.get("keyword")
+    products = Product.objects.all()
+
+    if keyword:
+        products = products.filter(product_name__icontains=keyword)
+
+    paginator = Paginator(products, 8)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        "page_obj": page_obj,
+        "keyword": keyword
     }
-    return render(request,"shop.html",context)
+
+    return render(request, "shop.html", context)
 
