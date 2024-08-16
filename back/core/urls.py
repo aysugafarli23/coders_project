@@ -22,17 +22,25 @@ from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about', about, name='about'),
+    path('',home,name='homepage'),
+    path('about/', about, name='about'),
     path('checkout/', checkout, name='checkout'),
     path('google_map/', google_map, name='google_map'),
     path('our_portfolio/', our_portfolio, name='our_portfolio'),
     path('portfolio_details/<int:id>/', portfolio_details, name='portfolio_details'),
     path('product_details/<int:id>/', product_details, name='product_details'),
     path('shop/', shop, name='shop'),
-    path('',home,name='homepage'),
-    path('agent',agent,name='agent'),
-    path('news',news,name='news'),
-    path('services',services,name='services'),
+    path('agent/',agent,name='agent'),
+    path('news/',news,name='news'),
+    path('services/',services,name='services'),
+    path('wishlist/',wishlist,name='wishlist'),
+    path('faq/',faq,name='faq'),
+    path('agentdetails/',agent__details,name='agentdetails'),
+    path('contactus/', contact_us, name='contactus'),
+    path('login/',login,name='login'),
+    path('mycart/',mycart,name='mycart'),
+    path('newsdetails/',newsdetails,name='newsdetails'),
+    path('register/',register,name='register'),
     path('pro-api/',include('main.api.urls')) 
 ]
 

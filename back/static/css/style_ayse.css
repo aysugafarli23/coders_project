@@ -1,10 +1,5 @@
 /* contact us */
-/* body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-} */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,18 +9,11 @@
     font-family: "Khmer MN", sans-serif;
 }
 
-/* body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-} */ 
-
-.container {
+/* .container {
     max-width: 95%;
     width: 1260px;
     margin: 0 auto;
-}
-/*countacusmain*/
+} */
 
 .contactuscontainer {
     background-color: #f4f4f4;
@@ -140,35 +128,7 @@ button:hover {
     background-color: #0033aa;
 }
  
-
-
-
-
-
-
-
-
-
-
-
 /* faq */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Khmer MN", sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
- 
 
 
 .faq-container {background-color: #f4f4f4;
@@ -223,27 +183,7 @@ body {
     color: #666;
 }
 
- 
-
-
 /* login */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Khmer MN", sans-serif;
-}
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
- 
-
-
 
 
 .breadcrumb-container {
@@ -353,51 +293,8 @@ textarea {
 .signup-link a:hover {
     text-decoration: underline;
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* register */
-
-
-
-
-
-
-
-
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Khmer MN", sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
 
 .breadcrumb-container {
     background-color: #f4f4f4;
@@ -493,35 +390,7 @@ button:hover {
     text-decoration: underline;
 }
 
- 
-
-
-
-
-
-
-
-
-
-
 /* service details */
-
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Khmer MN", sans-serif;
-} 
 
 .servicesdetails-container {
     background-color: #f4f4f4;
@@ -545,23 +414,6 @@ body {
     color: #666;
 }
 
-
-
-
-header {
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-}
 
 .main-content {
     width: 70%;
@@ -607,40 +459,8 @@ main {
     margin-bottom: 10px;
 }
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* services */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Khmer MN", sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
- 
 .breadcrumb-container {
     background-color: #f4f4f4;
     padding: 80px 40px;
@@ -663,7 +483,9 @@ body {
     margin: 0;
     color: #666;
     font-family: Cardo;
-}.our-services {
+}
+
+.our-services {
     text-align: center;
     padding: 50px 20px;
 }
@@ -708,4 +530,3 @@ body {
     color: #666;
     line-height: 1.5;
 }
- 

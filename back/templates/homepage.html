@@ -26,9 +26,9 @@
                             <li><a href="">Home</a></li>
                             <a href="{% url 'about'%}">About</a>
                             <a href="{% url 'shop'%}">Shop</a>
-                            <li><a href="#">News</a></li>
+                            <li><a href="{% url 'news'%}">News</a></li>
                             <li><a href="#">Pages</a><i class="fa-solid fa-angle-down"></i></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="{% url 'contactus'%}">Contact</a></li>
                         </ul>
                     </div>
                     <div class="homepage__navbar__right__links">
@@ -50,8 +50,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="homepage__signin"><a href="#">Sign In</a></div>
-                        <div class="homepage__register__button"><a href="#" class="btn">Register</a></div>
+                        <div class="homepage__signin"><a href="{% url 'register'%}">Sign In</a></div>
+                        <div class="homepage__register__button"><a href="{% url 'login'%}" class="btn">Log In</a></div>
                     </div>
                 </div>
             </div>
@@ -663,21 +663,21 @@
                 <div class="footer__list">
                     <ul>
                         <li class="list__title">Company</li>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Shop</li>
-                        <li>Wishlist</li>
-                        <li>Portfolio</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="{% url 'about'%}">About</a></li>
+                        <li><a href="{% url 'shop'%}">Shop</a></li>
+                        <li><a href="{% url 'wishlist'%}">Wishlist</a></li>
+                        <li><a href="{% url 'our_portfolio'%}">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="footer__list">
                     <ul>
                         <li class="list__title">Service</li>
-                        <li>Login</li>
-                        <li>Register</li>
-                        <li>Location</li>
-                        <li>FAQ</li>
-                        <li>News</li>
+                        <li><a href="{% url 'login'%}">Login</a></li>
+                        <li><a href="{% url 'register'%}">Register</a></li>
+                        <li><a href="{% url 'google_map'%}">Location</a></li>
+                        <li><a href="{% url 'faq'%}">FAQ</a></li>
+                        <li><a href="{% url 'news'%}">News</a></li>
                     </ul>
                 </div>
                 <div class="fnews">

@@ -17,6 +17,30 @@ def news(request):
 def services(request):
     return render(request,"services.html")
 
+def wishlist(request):
+    return render(request,"wishlist.html")
+
+def faq(request):
+    return render(request,"faq.html")
+
+def agent__details(request):
+    return render(request,"agent__details.html")
+
+def contact_us(request):
+    return render(request,"contact_us.html")
+
+def login(request):
+    return render(request,"login.html")
+
+def mycart(request):
+    return render(request,"my__cart.html")
+
+def newsdetails(request):
+    return render(request,"news__details.html")
+
+def register(request):
+    return render(request,"register.html")
+
 def about(request):
     agents=Agent.objects.all()
     services=Service.objects.all()
