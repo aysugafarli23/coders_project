@@ -22,17 +22,18 @@ from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', about, name='about'),
+    path('about', about, name='about'),
     path('checkout/', checkout, name='checkout'),
     path('google_map/', google_map, name='google_map'),
     path('our_portfolio/', our_portfolio, name='our_portfolio'),
     path('portfolio_details/<int:id>/', portfolio_details, name='portfolio_details'),
     path('product_details/<int:id>/', product_details, name='product_details'),
     path('shop/', shop, name='shop'),
-    path('pro-api/',include('main.api.urls'))
-    
-    
-    
+    path('',home,name='homepage'),
+    path('agent',agent,name='agent'),
+    path('news',news,name='news'),
+    path('services',services,name='services'),
+    path('pro-api/',include('main.api.urls')) 
 ]
 
 

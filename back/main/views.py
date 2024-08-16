@@ -4,6 +4,19 @@ from .models import Portfolio,Product,Agent,Service
 
 
 # Create your views here.
+
+def home(request):
+    return render(request,"homepage.html")
+
+def agent(request):
+    return render(request,"agent.html")
+
+def news(request):
+    return render(request,"news.html")
+
+def services(request):
+    return render(request,"services.html")
+
 def about(request):
     agents=Agent.objects.all()
     services=Service.objects.all()

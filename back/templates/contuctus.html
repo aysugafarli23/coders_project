@@ -1,43 +1,39 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+       <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contuctus.css">
+    <link rel="stylesheet" href="responsive.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/style_aysu.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/responsive_aysu.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/style_ayse.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/responsive_ayse.css' %}" />
-    <title>{% block title %}{% endblock title %}</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+     <header>
         <div class="container">
             <div class="navbar">
                 <div class="home"><a href="">Home<span>Q</span></a></div>
                 <div class="navbar_menu">
                     <a href="">Home</a>
-                    <a href="{% url 'about'%}">About</a>
-                    <a href="{% url 'shop'%}">Shop</a>
-                    <a href="{% url 'news' %}">News</a>
+                    <a href="">About</a>
+                    <a href="">Shop</a>
+                    <a href="">News</a>
                     <a href="" class="navbar_pages" id="navbar-toggle">Pages</a>
                     <i class="fa-solid fa-chevron-down" id="narrow"></i>
                     <div class="navbar_pages_show" id="navbar-pages-show">
                         <hr>
                         <ul class="nav-links">
-                            <li><a href="{% url 'our_portfolio' %}">Portfolio</a></li>
-                            <li><a href="{% url 'agent' %}">Our Agent</a></li>
-                            <li><a href="{% url 'services' %}">Our Service</a></li>
-                            <li><a href="">Wishlist</a></li>
-                            <li><a href="{% url 'google_map' %}">Location</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Our Agent</a></li>
+                            <li><a href="">Our Service</a></li>
+                            <li><a href="">Wishlzist</a></li>
+                            <li><a href="">Location</a></li>
                             <li><a href="">FAQ</a></li>
                         </ul>
                     </div>
@@ -51,19 +47,76 @@
                         <div class="line3"></div>
                     </div>
                     <a href="">Sign in</a>
-                    <a href=""><button>Log in</button></a>
+                    <a href=""><button>Register</button></a>
                 </div>
             </div>
         </div>
     </header>
-    {% block main %}
-    
-    {% endblock main %}
-    <footer>
+    <main>
+    <div class="contactuscontainer">
+      <div class="container">
+        <div class="contacus">
+          <h2>Contac us</h2>
+          <p>Home / Contac us</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+        <h3>Email Address</h3>
+        <p>homeq.example@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon-circle"><i class="fas fa-phone"></i></div>
+        <h3>Phone Number</h3>
+        <p>(208) 555-0112</p>
+      </div>
+      <div class="contact-item">
+        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Office Address</h3>
+        <p>3517 W. Gray St. Utica, Pennsylvania 57867</p>
+      </div>
+    </div>
+
+    <div class="quote-form">
+      <h2>Get a Quote</h2>
+      <form id="quoteForm">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" id="name" required />
+          <input type="email" placeholder="Your Email" id="email" required />
+        </div>
+        <div class="form-group">
+          <select id="serviceType" required>
+            <option value="">Select Service Type</option>
+            <option value="service1">Service 1</option>
+            <option value="service2">Service 2</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Your Phone Number"
+            id="phone"
+            required
+          />
+        </div>
+        <textarea placeholder="Enter Message" id="message" required></textarea>
+        <div class="form-group">
+          <input type="checkbox" id="agree" required />
+          <label for="agree"
+            >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.</label
+          >
+        </div>
+        <button type="submit">Get a Free Service</button>
+      </form>
+    </div>
+    </main>
+ <footer>
         <div class="container">
             <div class="footer_present">
                 <div class="footer_present_img">
-                    <img src="{% static './assets/footer_image.png' %}" alt="">
+                    <img src="Image.svg" alt="">
                 </div>
                 <div class="footer_present_about">
                     <p class="look">Looking for a Dream Home?</p>
@@ -115,18 +168,18 @@
                     <div class="footer_about_company">
                         <p class="footer_about_title">Company</p>
                         <a href="">Home</a>
-                        <a href="{% url 'about' %}">About</a>
-                        <a href="{% url 'shop' %}">Shop</a>
+                        <a href="">About</a>
+                        <a href="">Shop</a>
                         <a href="">Wishlist</a>
-                        <a href="{% url 'our_portfolio' %}">Portfolio</a>
+                        <a href="">Portfolio</a>
                     </div>
                     <div class="footer_about_service">
                         <p class="footer_about_title">Service</p>
                         <a href="">Login</a>
                         <a href="">Register</a>
-                        <a href="{% url 'google_map' %}">Location</a>
+                        <a href="">Location</a>
                         <a href="">FAQ</a>
-                        <a href="{% url 'news' %}">News</a>
+                        <a href="">News</a>
                     </div>
                 </div>
                 <div class="footer_about_newslater">
@@ -158,7 +211,6 @@
         </div>
         </div>
     </footer>
-    <script src="{% static 'app.js' %}"></script>
-    
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
