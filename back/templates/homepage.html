@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style_aysu.css' %}" />
     <link rel="stylesheet" href="{% static 'css/responsive_aysu.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
     <title>HomeQ - Homepage</title>
 </head>
 
@@ -26,9 +28,9 @@
                             <li><a href="">Home</a></li>
                             <a href="{% url 'about'%}">About</a>
                             <a href="{% url 'shop'%}">Shop</a>
-                            <li><a href="{% url 'news'%}">News</a></li>
+                            <li><a href="#">News</a></li>
                             <li><a href="#">Pages</a><i class="fa-solid fa-angle-down"></i></li>
-                            <li><a href="{% url 'contactus'%}">Contact</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div class="homepage__navbar__right__links">
@@ -50,8 +52,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="homepage__signin"><a href="{% url 'register'%}">Sign In</a></div>
-                        <div class="homepage__register__button"><a href="{% url 'login'%}" class="btn">Log In</a></div>
+                        <div class="homepage__signin"><a href="#">Sign In</a></div>
+                        <div class="homepage__register__button"><a href="#" class="btn">Register</a></div>
                     </div>
                 </div>
             </div>
@@ -91,7 +93,7 @@
                     </div>
                 </div>
                 <div class="homepage__main__right">
-                    <img src="./images/header.png" alt="home">
+                    <img src="../static/images/header.png" alt="home">
                 </div>
             </div>
 
@@ -104,7 +106,7 @@
             <!-- About Us Section -->
             <section class="about">
                 <div class="about__img">
-                    <img src="./images/about.png" al="home">
+                    <img src="../static/images/about.png" al="home">
                 </div>
                 <div class="about__content">
                     <div class="about__content__inside">
@@ -146,7 +148,7 @@
                 <div class="prop__cards">
                     <div class="prop__card__item">
                         <div class="card__image">
-                            <img src="./images/prop1.png" alt="">
+                            <img src="../static/images/prop1.png" alt="">
                             <div class="card__heart">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
                                     fill="none">
@@ -232,7 +234,7 @@
                     </div>
                     <div class="prop__card__item">
                         <div class="card__image">
-                            <img src="./images/prop2.png" alt="">
+                            <img src="../static/images/prop2.png" alt="">
                             <div class="card__heart">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
                                     fill="none">
@@ -318,7 +320,7 @@
                     </div>
                     <div class="prop__card__item">
                         <div class="card__image">
-                            <img src="./images/prop3.png" alt="">
+                            <img src="../static/images/prop3.png" alt="">
                             <div class="card__heart">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
                                     fill="none">
@@ -441,37 +443,37 @@
                 <div class="service__title">Our Service</div>
                 <div class="service__items">
                     <div class="service__item">
-                        <div class="service__item__icon"><img src="./images/Activity.svg" alt=""></div>
+                        <div class="service__item__icon"><img src="../static/images/Activity.svg" alt=""></div>
                         <div class="service__item__title">Property Management</div>
                         <div class="service__item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
                             a enim, consectetur cursus.</div>
                     </div>
                     <div class="service__item">
-                        <div class="service__item__icon"><img src="./images/Buy.svg" alt=""></div>
+                        <div class="service__item__icon"><img src="../static/images/Buy.svg" alt=""></div>
                         <div class="service__item__title">Property Management</div>
                         <div class="service__item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
                             a enim, consectetur cursus.</div>
                     </div>
                     <div class="service__item">
-                        <div class="service__item__icon"><img src="./images/Calling.svg" alt=""></div>
+                        <div class="service__item__icon"><img src="../static/images/Calling.svg" alt=""></div>
                         <div class="service__item__title">Property Management</div>
                         <div class="service__item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
                             a enim, consectetur cursus.</div>
                     </div>
                     <div class="service__item">
-                        <div class="service__item__icon"><img src="./images/Chart.svg" alt=""></div>
+                        <div class="service__item__icon"><img src="../static/images/Chart.svg" alt=""></div>
                         <div class="service__item__title">Property Management</div>
                         <div class="service__item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
                             a enim, consectetur cursus.</div>
                     </div>
                     <div class="service__item">
-                        <div class="service__item__icon"><img src="./images/Discount.svg" alt=""></div>
+                        <div class="service__item__icon"><img src="../static/images/Discount.svg" alt=""></div>
                         <div class="service__item__title">Property Management</div>
                         <div class="service__item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
                             a enim, consectetur cursus.</div>
                     </div>
                     <div class="service__item">
-                        <div class="service__item__icon"><img src="./images/Graph.svg" alt=""></div>
+                        <div class="service__item__icon"><img src="../static/images/Graph.svg" alt=""></div>
                         <div class="service__item__title">Property Management</div>
                         <div class="service__item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
                             a enim, consectetur cursus.</div>
@@ -484,22 +486,22 @@
                 <div class="portfolio__title">Our Portfolio</div>
                 <div class="portfolio__items">
                     <div class="portfolio__item__image">
-                        <img src="./images/portfolio1.png">
+                        <img src="../static/images/portfolio1.png">
                     </div>
                     <div class="portfolio__item__image">
-                        <img src="./images/portfolio2.png">
+                        <img src="../static/images/portfolio2.png">
                     </div>
                     <div class="portfolio__item__image">
-                        <img src="./images/portfolio3.png">
+                        <img src="../static/images/portfolio3.png">
                     </div>
                     <div class="portfolio__item__image">
-                        <img src="./images/portfolio4.png">
+                        <img src="../static/images/portfolio4.png">
                     </div>
                     <div class="portfolio__item__image">
-                        <img src="./images/portfolio5.png">
+                        <img src="../static/images/portfolio5.png">
                     </div>
                     <div class="portfolio__item__image">
-                        <img src="./images/portfolio6.png">
+                        <img src="../static/images/portfolio6.png">
                     </div>
                 </div>
                 <div class="portfolio__btn">
@@ -518,43 +520,43 @@
                 </div>
                 <div class="agent__items">
                     <div class="agent__item">
-                        <div class="agent__item__image"><img src="./images/agent1.png" alt=""></div>
+                        <div class="agent__item__image"><img src="../static/images/agent1.png" alt=""></div>
                         <div class="agent__item__title">Esther Howard</div>
                         <div class="agent__item__subtitle">Real Estate Broker</div>
                         <div class="agent__item__social">
-                            <div class="agent__social__icon"><img src="./images/Icon - Facebook.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Ig.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Wa.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Facebook.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Ig.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Wa.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="agent__item">
-                        <div class="agent__item__image"><img src="./images/agent2.png" alt=""></div>
+                        <div class="agent__item__image"><img src="../static/images/agent2.png" alt=""></div>
                         <div class="agent__item__title">Cameron Williamson</div>
                         <div class="agent__item__subtitle">Real Estate Broker</div>
                         <div class="agent__item__social">
-                            <div class="agent__social__icon"><img src="./images/Icon - Facebook.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Ig.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Wa.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Facebook.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Ig.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Wa.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="agent__item">
-                        <div class="agent__item__image"><img src="./images/agent3.png" alt=""></div>
+                        <div class="agent__item__image"><img src="../static/images/agent3.png" alt=""></div>
                         <div class="agent__item__title">Brooklyn Simmons</div>
                         <div class="agent__item__subtitle">Real Estate Broker</div>
                         <div class="agent__item__social">
-                            <div class="agent__social__icon"><img src="./images/Icon - Facebook.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Ig.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Wa.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Facebook.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Ig.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Wa.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="agent__item">
-                        <div class="agent__item__image"><img src="./images/agent4.png" alt=""></div>
+                        <div class="agent__item__image"><img src="../static/images/agent4.png" alt=""></div>
                         <div class="agent__item__title">Robert Fox</div>
                         <div class="agent__item__subtitle">Real Estate Broker</div>
                         <div class="agent__item__social">
-                            <div class="agent__social__icon"><img src="./images/Icon - Facebook.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Ig.svg" alt=""></div>
-                            <div class="agent__social__icon"><img src="./images/Icon - Wa.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Facebook.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Ig.svg" alt=""></div>
+                            <div class="agent__social__icon"><img src="../static/images/Icon - Wa.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -572,28 +574,28 @@
                 <div class="faq__items">
                     <div class="faq__item">
                         <div class="faq__item__header"><span>How to buy a product?</span>
-                            <div class="agent__icon"><img src="./images/Icon - Plus.svg" alt=""></div>
+                            <div class="agent__icon"><img src="../static/images/Icon - Plus.svg" alt=""></div>
                         </div>
                         <div class="faq__item__content"></div>
                     </div>
                     <hr>
                     <div class="faq__item">
                         <div class="faq__item__header"><span>How can I make refund from your website?</span>
-                            <div class="agent__icon"><img src="./images/Icon - Plus.svg" alt=""></div>
+                            <div class="agent__icon"><img src="../static/images/Icon - Plus.svg" alt=""></div>
                         </div>
                         <div class="faq__item__content"></div>
                     </div>
                     <hr>
                     <div class="faq__item">
                         <div class="faq__item__header"><span>How to buy a product?</span>
-                            <div class="agent__icon"><img src="./images/Icon - Plus.svg" alt=""></div>
+                            <div class="agent__icon"><img src="../static/images/Icon - Plus.svg" alt=""></div>
                         </div>
                         <div class="faq__item__content"></div>
                     </div>
                     <hr>
                     <div class="faq__item">
                         <div class="faq__item__header"><span>How can I make refund from your website?</span>
-                            <div class="agent__icon"><img src="./images/Icon - Minus.svg" alt=""></div>
+                            <div class="agent__icon"><img src="../static/images/Icon - Minus.svg" alt=""></div>
                         </div>
                         <div class="faq__item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id a
                             enim, consectetur cursus. At mattis nulla in pretium. Condimentum sagittis mauris augue
@@ -606,104 +608,105 @@
         </div>
     </main>
 
-
-    <footer>
+ <footer>
         <div class="container">
-            <!-- Footer Intro -->
-            <div class="footer__intro__container">
-                <section class="footer__intro">
-                    <div class="footer__intro__image"><img src="./images/footer.png" alt="House"></div>
-                    <div class="footer__intro__content">
-                        <div class="footer__title">Looking for a Dream Home?</div>
-                        <div class="title__line">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="209" height="12" viewBox="0 0 209 12"
-                                fill="none">
-                                <path
-                                    d="M1 10.9999C1 10.9999 61.4596 2.16784 100.541 1.08487C142.325 -0.0730059 208 11 208 11"
-                                    stroke="#DE8556" stroke-width="2" />
-                            </svg>
-                        </div>
-                        <div class="footer__subtitle">We can help you relize your dream of a new home</div>
-                    </div>
-                    <div class="footer__intro__btn"><a href="#">Explore Properties</a></div>
-                </section>
+            <div class="footer_present">
+                <div class="footer_present_img">
+                    <img src="{% static './assets/footer_image.png' %}" alt="">
+                </div>
+                <div class="footer_present_about">
+                    <p class="look">Looking for a Dream Home?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="209" height="12" viewBox="0 0 209 12" fill="none">
+                        <path
+                            d="M1.01172 10.9999C1.01172 10.9999 61.4713 2.16784 100.553 1.08487C142.337 -0.0730059 208.012 11 208.012 11"
+                            stroke="#DE8556" stroke-width="2" />
+                    </svg>
+                    <p class="home">We can help you relize your dream of a new home</p>
+                </div>
+                <div class="footer_present_button">
+                    <button>Explore Properties</button>
+                </div>
             </div>
-
-            <!-- Footer main -->
-            <section class="footer__main">
-                <div class="footer__list">
-                    <div class="footer__main__logo"><span class="home">Home</span> <span class="letter__q">Q</span>
-                    </div>
-                    <div class="footer__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. </div>
-                    <div class="footer__contact__info">
-                        <div class="fcontact__item">
-                            <div class="fcontact__icon"><img src="./images/Call.svg" alt=""></div>
-                            <div class="fcontact__content">
-                                <div class="fcontent__title">Phone</div>
-                                <div class="fcontent__subtitle">(208)555-0112</div>
-                            </div>
+            <div class="footer_about">
+                <div class="footer_about_home">
+                    <p class="footer_home">Home<span>Q</span></p>
+                    <p class="footer_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    </p>
+                    <div class="footer_about_home_phone">
+                        <div class="footer_about_home_icon">
+                            <i class="fa-solid fa-phone"></i>
                         </div>
-                        <div class="fcontact__item">
-                            <div class="fcontact__icon"><img src="./images/Message.svg" alt=""></div>
-                            <div class="fcontact__content">
-                                <div class="fcontent__title">Email</div>
-                                <div class="fcontent__subtitle">homeq.example@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="fcontact__item">
-                            <div class="fcontact__icon"><img src="./images/location (3) 1.svg" alt=""></div>
-                            <div class="fcontact__content">
-                                <div class="fcontent__title">Address</div>
-                                <div class="fcontent__subtitle">3517 W. Gray St. Utica, Pennsylvania 57867</div>
-                            </div>
+                        <div class="footer_about_home_phone_info">
+                            <h2 class="name">Phone</h2>
+                            <p class="info">(208) 555-0112</p>
                         </div>
                     </div>
+                    <div class="footer_about_home_email">
+                        <div class="footer_about_home_email_icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer_about_home_email_info">
+                            <h2 class="name">Email</h2>
+                            <p class="info">homeq.example@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer_about_home_adress">
+                        <div class="footer_about_home_adress_icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footer_about_home_adress_info">
+                            <h2 class="name">Address</h2>
+                            <p class="info">3517 W. Gray St. Utica, Pennsylvania 57867</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer__list">
-                    <ul>
-                        <li class="list__title">Company</li>
-                        <li><a href="">Home</a></li>
-                        <li><a href="{% url 'about'%}">About</a></li>
-                        <li><a href="{% url 'shop'%}">Shop</a></li>
-                        <li><a href="{% url 'wishlist'%}">Wishlist</a></li>
-                        <li><a href="{% url 'our_portfolio'%}">Portfolio</a></li>
-                    </ul>
+                <div class="footer_company_service">
+                    <div class="footer_about_company">
+                        <p class="footer_about_title">Company</p>
+                        <a href="">Home</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'shop' %}">Shop</a>
+                        <a href="">Wishlist</a>
+                        <a href="{% url 'our_portfolio' %}">Portfolio</a>
+                    </div>
+                    <div class="footer_about_service">
+                        <p class="footer_about_title">Service</p>
+                        <a href="">Login</a>
+                        <a href="">Register</a>
+                        <a href="{% url 'google_map' %}">Location</a>
+                        <a href="">FAQ</a>
+                        <a href="{% url 'news' %}">News</a>
+                    </div>
                 </div>
-                <div class="footer__list">
-                    <ul>
-                        <li class="list__title">Service</li>
-                        <li><a href="{% url 'login'%}">Login</a></li>
-                        <li><a href="{% url 'register'%}">Register</a></li>
-                        <li><a href="{% url 'google_map'%}">Location</a></li>
-                        <li><a href="{% url 'faq'%}">FAQ</a></li>
-                        <li><a href="{% url 'news'%}">News</a></li>
-                    </ul>
-                </div>
-                <div class="fnews">
-                    <div class="fnews__title">Newsletter</div>
-                    <div class="fnews__subtitle">Subscribe to our newsletter and receive updates via email</div>
-                    <form class="fnews__form">
+                <div class="footer_about_newslater">
+                    <p class="footer_about_title">Newslater</p>
+                    <p class="footer_text">Subscribe to our newsletter and receive updates via email</p>
+                    <form class="form_footer">
                         <input type="text" placeholder="Email Address">
-                        <div class="fnews__btn">
-                            <a href="#"><img src="./images/Send.svg" alt="send"></a>
-                        </div>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.8167 14.8178L14.4737 20.7508C14.6337 21.0108 14.8837 21.0078 14.9847 20.9938C15.0857 20.9798 15.3287 20.9178 15.4167 20.6228L19.9897 5.17777C20.0697 4.90477 19.9227 4.71877 19.8567 4.65277C19.7927 4.58677 19.6097 4.44577 19.3447 4.52077L3.88866 9.04677C3.59566 9.13277 3.53166 9.37877 3.51766 9.47977C3.50366 9.58277 3.49966 9.83777 3.75866 10.0008L9.75967 13.7538L15.0617 8.39577C15.3527 8.10177 15.8277 8.09877 16.1227 8.38977C16.4177 8.68077 16.4197 9.15677 16.1287 9.45077L10.8167 14.8178ZM14.9067 22.4998C14.2107 22.4998 13.5727 22.1458 13.1967 21.5378L9.31967 15.2468L2.96366 11.2718C2.27866 10.8428 1.92066 10.0788 2.03166 9.27577C2.14166 8.47277 2.69266 7.83477 3.46666 7.60777L18.9227 3.08177C19.6337 2.87377 20.3957 3.07077 20.9197 3.59277C21.4437 4.11977 21.6387 4.88977 21.4267 5.60377L16.8537 21.0478C16.6247 21.8248 15.9847 22.3738 15.1837 22.4808C15.0897 22.4928 14.9987 22.4998 14.9067 22.4998Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
                     </form>
-                    <div class="fsocial">
-                        <div class="fsocial__title">Social Account</div>
-                        <div class="fsocial__items">
-                            <div class="fsocial__item"><img src="./images/Icon - Facebook.svg" alt=""></div>
-                            <div class="fsocial__item"><img src="./images/Icon - Ig.svg" alt=""></div>
-                            <div class="fsocial__item"><img src="./images/Icon - Wa.svg" alt=""></div>
+                    <div class="footer_about_social">
+                        <p class="footer_about_title">Social Account</p>
+                        <div class="footer_about_social_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
                         </div>
                     </div>
                 </div>
-
-            </section>
+            </div>
+            <hr>
+            <h2 class="footer_reserved_company">All Rights Reserved Company 2022</h2>
         </div>
-    <footer>
-   
-
+        </div>
+    </footer>
     <script src="{% static 'app.js' %}"></script>
     
 </body>

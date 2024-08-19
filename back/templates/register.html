@@ -1,23 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} Register{% endblock title %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style_ayse.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/responsive_ayse.css' %}" />
+{% endblock %}
+{% block title %}
+  Register
+{% endblock %}
 
 {% block main %}
-<main>
-    <div class="cover">
-        <div class="container">
-    
-            <h1 class="covers_h1">Register</h1>
-            <h4><span class="covers_span">Home/</span>Register</h4>
+  <main>
+    <div class="breadcrumb-container">
+      <div class="container">
+        <div class="breadcrumb">
+          <h2>Register</h2>
+          <p>Home / Register</p>
         </div>
+      </div>
     </div>
-    
     <div class="registeryour">
       <h1>Register your account</h1>
-      <p class="description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint.
-      </p>
+      <p class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
       <form class="register-form">
         <input type="text" placeholder="Last Name" required />
         <input type="email" placeholder="Email*" required />
@@ -29,9 +32,9 @@
         </label>
         <button id="creataccount">Creat account</button>
       </form>
-      <p class="login-link">Already have an account? <a href="#">Login</a></p>
+      <p class="login-link">
+        Already have an account? <a href="#">Login</a>
+      </p>
     </div>
   </main>
-
-{% endblock main %}
-
+{% endblock %}

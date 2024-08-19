@@ -1,5 +1,10 @@
 {% extends 'base.html' %} 
 {% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style_aysu.css' %}" />
+<link rel="stylesheet" href="{% static 'css/responsive_aysu.css' %}" />
+{% endblock css %}
+
 {% block title %} News{%endblock title %}
 
 {% block main %}
@@ -22,7 +27,7 @@
             <div class="news__left__sidebar">
                 <div class="news__posts">
                     <div class="news__post">
-                        <div class="post__image"><img src="./images/news1.png" alt="House"></div>
+                        <div class="post__image"><img src="../static/images/news1.png" alt="House"></div>
                         <div class="post__content">
                             <div class="post__title__date">
                                 <div class="post__title">Amet minim mollit non deserunt ullamco est sit </div>
@@ -39,7 +44,7 @@
                             </div>
                             <div class="post__ending">
                                 <div class="post__author">
-                                    <div class="post__author__avatar"><img src="./images/author1.png"
+                                    <div class="post__author__avatar"><img src="../static/images/author1.png"
                                             alt="human__photo"></div>
                                     <div class="post__author__title">Marvin McKinney</div>
                                 </div>
@@ -50,7 +55,7 @@
                         </div>
                     </div>
                     <div class="news__post">
-                        <div class="post__image"><img src="./images/news2.png" alt="House"></div>
+                        <div class="post__image"><img src="../static/images/news2.png" alt="House"></div>
                         <div class="post__content">
                             <div class="post__title__date">
                                 <div class="post__title">Amet minim mollit non deserunt ullamco est sit </div>
@@ -67,7 +72,7 @@
                             </div>
                             <div class="post__ending">
                                 <div class="post__author">
-                                    <div class="post__author__avatar"><img src="./images/author2.png"
+                                    <div class="post__author__avatar"><img src="../static/images/author2.png"
                                             alt="human__photo"></div>
                                     <div class="post__author__title">Marvin McKinney</div>
                                 </div>
@@ -78,7 +83,7 @@
                         </div>
                     </div>
                     <div class="news__post">
-                        <div class="post__image"><img src="./images/news3.png" alt="House"></div>
+                        <div class="post__image"><img src="../static/images/news3.png" alt="House"></div>
                         <div class="post__content">
                             <div class="post__title__date">
                                 <div class="post__title">Amet minim mollit non deserunt ullamco est sit </div>
@@ -95,7 +100,7 @@
                             </div>
                             <div class="post__ending">
                                 <div class="post__author">
-                                    <div class="post__author__avatar"><img src="./images/author3.png"
+                                    <div class="post__author__avatar"><img src="../static/images/author3.png"
                                             alt="human__photo"></div>
                                     <div class="post__author__title">Marvin McKinney</div>
                                 </div>
@@ -167,9 +172,9 @@
                     </div>
                     <div class="news__top__cat__hr"></div>
                     <div class="news__portfolio__items">
-                        <div class="news__portfolio__item"><img src="./images/news4.png" alt="Villa__image"></div>
-                        <div class="news__portfolio__item"><img src="./images/news5.png" alt="Villa__image"></div>
-                        <div class="news__portfolio__item"><img src="./images/news6.png" alt="Villa__image"></div>
+                        <div class="news__portfolio__item"><img src="../static/images/news4.png" alt="Villa__image"></div>
+                        <div class="news__portfolio__item"><img src="../static/images/news5.png" alt="Villa__image"></div>
+                        <div class="news__portfolio__item"><img src="../static/images/news6.png" alt="Villa__image"></div>
                         <div class="news__portfolio__btn">
                             <a href="#" class="news__btn">See All</a>
                         </div>
