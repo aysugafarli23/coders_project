@@ -110,5 +110,5 @@ class Comment(models.Model):
     com_created=models.DateField(auto_now_add=True)
     
     def __str__(self):
-        return self.name
+        return self.com_name
     
