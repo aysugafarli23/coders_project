@@ -1182,7 +1182,7 @@ i {
     font-weight: 600;
 }
 
-.ad__main__item__subtitle{
+.ad__main__item__subtitle {
     color: var(--Greyscale-Grey-100, #38343D);
     font-family: "Plus Jakarta Sans";
     font-size: 14px;
@@ -1255,7 +1255,7 @@ i {
 }
 
 .contact__form form textarea {
-    width: 100%;
+    width: 730px;
     height: 149px;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -1323,10 +1323,10 @@ i {
     align-items: center;
     justify-content: space-between;
     padding: 32px 0px;
-    
+
 }
 
-.item__border{
+.item__border {
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
@@ -1436,9 +1436,76 @@ i {
     font-weight: 700;
 }
 
-.total__price__text{
+.total__price__text {
     display: none;
 }
+
+.mycart__cart__totals__container {
+    height: 600px;
+    margin-top: 35px;
+    padding-right: 150px;
+}
+
+.totals__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 87px;
+    float: right;
+}
+
+.card__totals__title {
+    color: var(--Greyscale-Grey-100);
+    font-family: Cardo;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card__totals__items {
+    width: 510px;
+}
+
+.card__totals__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    color: var(--Greyscale-Grey-100);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    /* font-weight: 500; */
+}
+
+.card__totals__bold__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    color: var(--Greyscale-Grey-100);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.card__totals__btn {
+    display: flex;
+    width: 100%;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background-color: var(--Main-Colors-Prymary);
+}
+
+.proceed__to__checkout__btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 
 /* --------------------------news.html----------------------------- */
 .news {
