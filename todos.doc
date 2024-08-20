@@ -1,0 +1,34 @@
+--Stripe demo
+--login/register
+
+-Sekilller ucun link vermek -<img src="../static/images/wishlist-mycard1.png" alt="villa__image">
+-my card ve wishlist responsive 
+
+HOMEPAGE
+-heart click => Wishlist 
+-Slogan - video
+--Our Service - flip cards
+-FAQ -js          
+
+AGENT DETAILS
+--Contact Form
+
+WISHLIST
+--Add to card
+--cancel button
+--in stock - models
+
+MY CARD
+--cancel button
+--counter => card
+
+NEWS
+--Models => category, news post image, title, context, date, autor avatar, author title,
+
+NEWS DETAILS
+--Comments:
+  -User avatar, user title, user comment
+-- Comments Form=> Name, email, comment
+
+
+

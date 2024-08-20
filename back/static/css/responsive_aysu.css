@@ -1,3 +1,63 @@
+@media only screen and (max-width: 1040px) {
+    .wishlist__text {
+        gap: 80px;
+    }
+
+    .wishlist__text__price {
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .wishlist__text {
+        gap: 40px;
+    }
+
+    .wishlist__text__price {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .wishlist__title {
+        font-size: 18px;
+    }
+
+
+    .wishlist__image {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+@media only screen and (max-width: 760px) {
+    /* .wishlist__item {
+        flex-direction: column;
+    } */
+
+    .wishlist__cancel__btn {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+    .wishlist__item{
+        position: relative;
+        align-items:end;
+    }
+    .wishlist__text{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+    }
+    .wishlist__title{
+        font-size: 24px;
+    }
+    .wishlist__image{
+        width: 96px;
+        height: 96px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     .container {
@@ -34,13 +94,13 @@
         display: none;
     }
 
-    header {
+    /* header {
         width: 324px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-    }
+    } */
 
     .navbar {
         padding: 30px;
@@ -268,8 +328,45 @@
     }
 
     /* ------------------------------------wishlist.html---------------------------------------- */
+    .wishlist__item .container {
+        border: 1px solid red;
+        width: 100%;
+    }
+
+   .wishlist__item {
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+    }
+
+    .wishlist__addcart__btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wishlist__area{
+        align-items: start;
+        gap: 18px;
+    }
 
     /* ------------------------------------my__card.html---------------------------------------- */
+    .mycart__total__price{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        padding-top: 18px;
+    }
+
+    .total__price__text{
+        display: block;
+        color: var(--Greyscale-Grey-100);
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-weight: 500;
+    }
 
     /* ------------------------------------news.html---------------------------------------- */
     .news {
@@ -299,5 +396,13 @@
     }
 
 
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .wishlist__title{
+        font-size: 18px;
+    }
 
 }

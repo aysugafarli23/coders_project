@@ -84,3 +84,20 @@ class Customer(models.Model):
     def __str__(self):
         return self.customer_name
     
+    
+# Contact Form Model
+
+class ContactSubmission(models.Model):
+    class ServiceType(models.TextChoices):
+        F = 'F', 'Freemium'
+        P = 'P',  'Premium'
+        
+    name = models.CharField(max_length=100, verbose_name=("Name"))
+    email = models.EmailField()
+    service = models.CharField(max_length=1, verbose_name="Select Service Type", choices=ServiceType.choices)
+    message = models.TextField(max_length=200, verbose_name=("Message"))
+    phone = models.CharField( max_length=50, verbose_name=("Your Phone Number"))
+    submitted_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return f"{self.name} --- {self.email}"

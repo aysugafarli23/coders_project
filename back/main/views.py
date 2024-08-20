@@ -1,6 +1,9 @@
 from django.core.paginator import Paginator
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404, redirect
 from .models import Portfolio,Product,Agent,Service
+from django.contrib import messages
+from .forms import ContactForm
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -11,35 +14,32 @@ def home(request):
 def agent(request):
     return render(request,"agent.html")
 
+# @login_required(login_url="login")
+def agent_details(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()  
+            messages.success(request, 'Thank you for your message.')
+            return redirect(request.META.get('HTTP_REFERER', '/'))
+    else:
+        form = ContactForm()
+    return render(request, 'agent__details.html', {'form': form})
+
 def news(request):
     return render(request,"news.html")
 
-def services(request):
-    return render(request,"services.html")
+def news_details(request):
+    return render(request, "news__details.html")
 
 def wishlist(request):
     return render(request,"wishlist.html")
 
-def faq(request):
-    return render(request,"faq.html")
+def my_cart(request):
+    return render(request, "my__cart.html")
 
-def agent__details(request):
-    return render(request,"agent__details.html")
-
-def contact_us(request):
-    return render(request,"contact_us.html")
-
-def login(request):
-    return render(request,"login.html")
-
-def mycart(request):
-    return render(request,"my__cart.html")
-
-def newsdetails(request):
-    return render(request,"news__details.html")
-
-def register(request):
-    return render(request,"register.html")
+def services(request):
+    return render(request,"services.html")
 
 def about(request):
     agents=Agent.objects.all()
@@ -109,4 +109,8 @@ def shop(request):
     }
 
     return render(request, "shop.html", context)
+
+
+# Contact Form
+
 

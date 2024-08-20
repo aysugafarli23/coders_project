@@ -323,6 +323,7 @@ section {
     position: absolute;
     top: 16px;
     right: 16px;
+    cursor: pointer;
 }
 
 .card__content {
@@ -1166,7 +1167,7 @@ i {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 160px;
+    /* gap: 160px; */
     text-align: left;
 }
 
@@ -1175,7 +1176,17 @@ i {
 }
 
 .ad__main__item__title {
+    color: var(--Greyscale-Grey-100, #38343D);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
     font-weight: 600;
+}
+
+.ad__main__item__subtitle{
+    color: var(--Greyscale-Grey-100, #38343D);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /* Agent Details Contact Form  */
@@ -1295,12 +1306,14 @@ i {
     background: var(--Main-Colors-Prymary, #123E56);
 }
 
-.contact__btn .btn {
+.contact__btn .button {
     color: #FFF;
     text-align: center;
     font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-weight: 600;
+    border: none;
+    background-color: inherit;
 }
 
 
@@ -1310,6 +1323,29 @@ i {
     align-items: center;
     justify-content: space-between;
     padding: 32px 0px;
+    
+}
+
+.item__border{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.wishlist__area {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.wishlist__text {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.wishlist__text__price {
+    display: flex;
+    align-items: center;
+    gap: 130px;
 }
 
 .wishlist__image {
@@ -1348,7 +1384,7 @@ i {
     font-weight: 400;
 }
 
-.wishlist__add__cart__btn {
+.wishlist__addcart__btn {
     padding: 12px 28px;
     border-radius: 2px;
     background: var(--Main-Colors-Prymary);
@@ -1365,14 +1401,8 @@ i {
     cursor: pointer;
 }
 
-.wishlist__hr {
-    width: 1140.074px;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.06);
-}
 
-
-/* --------------------------wishlist.html----------------------------- */
+/* --------------------------my__cart.html----------------------------- */
 .my__cart__counter {
     display: flex;
     flex-direction: row;
@@ -1406,6 +1436,9 @@ i {
     font-weight: 700;
 }
 
+.total__price__text{
+    display: none;
+}
 
 /* --------------------------news.html----------------------------- */
 .news {
