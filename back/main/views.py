@@ -1,6 +1,6 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render,get_object_or_404, redirect
-from .models import Portfolio,Product,Agent,Service
+from .models import Portfolio,Product,Agent,Service,Comment
 from django.contrib import messages
 from .forms import ContactForm,CommentForm
 from django.contrib.auth.decorators import login_required
@@ -91,11 +91,14 @@ def product_details(request, id):
     promo_product = Product.objects.order_by('?')[:2]
     product = get_object_or_404(Product, id=id)
     portfolios = Portfolio.objects.order_by('?')[:3]
+    comments=Comment.objects.all()
+    
     
     context = {
         "product": product,
         "promo_product": promo_product,
         'portfolios': portfolios,
+        'comments':comments
     }
     return render(request, "product_details.html", context)
 
