@@ -2,7 +2,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render,get_object_or_404, redirect
 from .models import Portfolio,Product,Agent,Service
 from django.contrib import messages
-from .forms import ContactForm
+from .forms import ContactForm,CommentForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -81,14 +81,21 @@ def portfolio_details(request, id):
     return render(request, "portfolio_details.html", context)
 
 def product_details(request, id):
+    
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(request.META.get('HTTP_REFERER', '/'))
+    
     promo_product = Product.objects.order_by('?')[:2]
     product = get_object_or_404(Product, id=id)
-    portfolios=Portfolio.objects.order_by('?')[:3]
+    portfolios = Portfolio.objects.order_by('?')[:3]
     
     context = {
         "product": product,
         "promo_product": promo_product,
-        'portfolios':portfolios
+        'portfolios': portfolios,
     }
     return render(request, "product_details.html", context)
 

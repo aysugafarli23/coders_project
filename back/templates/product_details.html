@@ -276,22 +276,22 @@
                                     {% csrf_token %}
                                     
                                     <!-- Name Field -->
-                                    {{ form.name.errors }} <!-- Display errors if any -->
-                                    <input type="text" name="name" placeholder="Your Name" value="{{ form.name.value|default:'' }}" class="form-control">
+                                    {{ form.com_name.errors }} <!-- Display errors if any -->
+                                    <input type="text" name="com_name" placeholder="Your Name" value="{{ form.com_name.value|default:'' }}" class="form-control">
                                     
                                     <!-- Email Field -->
-                                    {{ form.email.errors }}
-                                    <input type="email" name="email" id="agent__email" placeholder="Your Email" value="{{ form.email.value|default:'' }}" class="form-control">
+                                    {{ form.com_email.errors }}
+                                    <input type="email" name="com_email" id="agent__email" placeholder="Your Email" value="{{ form.com_email.value|default:'' }}" class="form-control">
                                     
                                     <!-- Message Field -->
-                                    {{ form.message.errors }}
-                                    <textarea name="message" id="area" cols="94" rows="5" placeholder="Enter Message" class="form-control">{{ form.message.value|default:'' }}</textarea>
+                                    {{ form.com_message.errors }}
+                                    <textarea name="com_message" id="area" cols="94" rows="5" placeholder="Enter Message" class="form-control">{{ form.com_message.value|default:'' }}</textarea>
                                     
-                                </div>
-                                <div class="com_btn_container">
-                                    <button class="com_btn"><a href="">Submit</a></button>
-                                </div>
-                         </form>
+                                    <div class="com_btn_container">
+                                        <button class="com_btn" type="submit">Submit</button>
+                                    </div>
+                                    
+                                </form>
         
                         </div>
                     </div>
