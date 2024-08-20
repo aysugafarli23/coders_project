@@ -2,6 +2,10 @@
 {% load static %}
 {% block title %} Product Details {% endblock title %}
 
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style_aysu.css' %}" />
+<link rel="stylesheet" href="{% static 'css/responsive_aysu.css' %}" />     
+{% endblock css %}
 {% block main %}
 <main>
     <div class="cover">
@@ -264,6 +268,34 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
+                    <div class="agent__details__contact__container">
+                        <div class="contact__container">
+                            <div class="contact__title">Add a Review</div>
+                            <div class="contact__form">
+                                <form method="post">
+                                    {% csrf_token %}
+                                    
+                                    <!-- Name Field -->
+                                    {{ form.name.errors }} <!-- Display errors if any -->
+                                    <input type="text" name="name" placeholder="Your Name" value="{{ form.name.value|default:'' }}" class="form-control">
+                                    
+                                    <!-- Email Field -->
+                                    {{ form.email.errors }}
+                                    <input type="email" name="email" id="agent__email" placeholder="Your Email" value="{{ form.email.value|default:'' }}" class="form-control">
+                                    
+                                    <!-- Message Field -->
+                                    {{ form.message.errors }}
+                                    <textarea name="message" id="area" cols="94" rows="5" placeholder="Enter Message" class="form-control">{{ form.message.value|default:'' }}</textarea>
+                                    
+                                </div>
+                                <div class="com_btn_container">
+                                    <button class="com_btn"><a href="">Submit</a></button>
+                                </div>
+                         </form>
+        
+                        </div>
+                    </div>
+                    
                     <div class="porudct_detail_relate">
                         <h5>Relate Properties</h5>
                         <div class="about_us_featured_properties_cards">
@@ -410,7 +442,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>zzzzzz
     </div>
 </main>
 {% endblock main %}

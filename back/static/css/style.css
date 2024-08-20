@@ -1495,3 +1495,35 @@ hr {
   width: 100%;
   padding-top: 85px;
 }
+
+.com_btn_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0px;
+}
+
+.com_btn{
+  border-radius: 2px;
+  background: var(--Main-Colors-Prymary, #123E56);
+  display: flex;
+  width: 282px;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.com_btn a{
+  color: #FFF;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#area{
+  padding-top: 20px;
+}

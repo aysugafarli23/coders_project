@@ -101,3 +101,14 @@ class ContactSubmission(models.Model):
     
     def __str__(self):
         return f"{self.name} --- {self.email}"
+    
+    
+class Comment(models.Model):
+    com_name=models.CharField(max_length=20)
+    com_email=models.EmailField(max_length=40)
+    com_message=models.CharField(max_length=300)
+    com_created=models.DateField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.name
+    
