@@ -2,8 +2,10 @@ from django.core.paginator import Paginator
 from django.shortcuts import render,get_object_or_404, redirect
 from .models import Portfolio,Product,Agent,Service
 from django.contrib import messages
-from .forms import ContactForm
+from .forms import ContactForm, RegisterForm, LoginForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+from django.contrib.auth import login, authenticate, logout
 
 
 # Create your views here.
@@ -111,6 +113,52 @@ def shop(request):
     return render(request, "shop.html", context)
 
 
-# Contact Form
+# Register
+def register__view(request):
+    form = RegisterForm(request.POST or None)
+    
+    if form.is_valid():
+        username = form.cleaned_data.get('username')
+        password = form.cleaned_data.get('password')
+        last_name = form.cleaned_data.get('last_name')
+        email = form.cleaned_data.get('email')
+        
+        # Create new User object and set all fields
+        newUser = User(username=username, last_name=last_name, email=email,)
+        newUser.set_password(password)
+        newUser.save()
+    
+        login(request, newUser)
+        messages.success(request, "Siz uğurla qeydiyyatdan keçdiniz...")
+        return redirect("homepage")
+    
+    context = {"form": form}
+    return render(request, "register.html", context)
 
+
+def login__view(request):
+    form = LoginForm(request.POST or None)
+    
+    context = {"form": form}
+    
+    if form.is_valid():
+        username = form.cleaned_data.get('username')
+        password = form.cleaned_data.get('password')
+        
+        user = authenticate(username=username, password=password)
+        
+        if user is None:
+            return render(request, "login.html", context)
+        
+        login(request, user)
+        messages.success(request, "Siz uğurla daxil oldunuz...")
+        return redirect("homepage")
+    return render(request, "login.html", context)
+
+
+
+
+def logout__view(request):
+    logout(request)
+    return redirect("homepage")
 
